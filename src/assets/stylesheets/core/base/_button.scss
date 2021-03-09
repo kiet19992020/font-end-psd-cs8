@@ -190,3 +190,21 @@
 }
 
 
+//buton rounded-circle
+
+.rounded-circle {
+
+  @include sizeEx(33px);
+  border-radius: 50%;
+  border: 1px solid;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+
+  cursor: pointer;
+
+  background-color: transparent;
+}
+

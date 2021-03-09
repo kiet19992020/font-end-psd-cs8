@@ -9,18 +9,27 @@
 }
 
 .header-logo {
+
   max-width: 200px;
 }
 
 @include media-breakpoint-down(lg) {
   .header {
     line-height: 102px;
+
     .navbar {
       display: block;
+      width: 100%;
+
+    }
+    .icon-close {
+      color: $blue;
+
     }
   }
   .header-logo {
-    max-width: 135px;
+    max-width: 100px;
+    padding-left: 15px;
   }
 
   html.is-open-menu,
@@ -32,11 +41,10 @@
   html.is-open-menu {
     body {
       @include position(absolute, 0, 0, null, 0, null);
-    }
 
+    }
     .header {
       bottom: 0;
-      height: 100%;
       overflow-y: auto;
     }
   }

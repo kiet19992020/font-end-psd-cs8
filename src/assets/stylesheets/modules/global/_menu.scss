@@ -1,24 +1,22 @@
 .main-menu-ul {
   padding: 1.5em 0;
-
-  .row>ul,
+  .row > ul,
   .menu-child {
     padding-left: 15px;
   }
 
-  >li {
+  > li {
     font-size: 1.3em;
 
     // text-transform: uppercase;
-    >a {
-      padding: 15px 0;
+    > a {
+      padding: 15px 0px;
     }
   }
 
   li {
-    margin: 0;
     position: relative;
-    color: $gray-900;
+    color: $white;
     line-height: 1.2em;
 
     a {
@@ -59,11 +57,7 @@
   }
 
   li {
-    // text-transform: none;
-    font-size: .85em;
-    // li {
-    //   text-transform: none;
-    // }
+    font-size: 0.85em;
   }
 
   .menu-child {
@@ -86,7 +80,7 @@
   padding: 0;
   margin-top: 8px;
   cursor: pointer;
-  background: $white ;
+  background: $white;
 
   .icon-bar {
     display: block;
@@ -96,7 +90,7 @@
     position: relative;
     margin-left: auto;
 
-    +.icon-bar {
+    + .icon-bar {
       margin-top: 7px;
     }
   }
@@ -109,6 +103,7 @@
   &.is-open-menu {
     .icomoon {
       display: block;
+      color: $blue;
     }
 
     .icon-bar {
@@ -140,12 +135,36 @@
 }
 
 @include media-breakpoint-down(lg) {
+  .menu-search {
+    margin: auto;
+    input {
+      width: 294px;
+      height: 34px;
+      // margin: 26px 41px 32px 40px;
+      background: transparent;
+      // padding: 6px 9px 6px 262px;
+      border: solid 1px $white;
+      color: $white;
+    }
+    .icomoon {
+      margin: 43px 0px -4px -26px;
+      
+      position: absolute;
+    }
+  }
+  .menu-login {
+    input {
+      width: 294px;
+      height: 46px;
+      padding: 0 20px 0 13px;
+    }
+  }
   .is-open-child {
     .main-menu-dropdown {
       display: block;
     }
 
-    >.nav-item-arrows {
+    > .nav-item-arrows {
       transform: rotate(180deg);
       transform-origin: center;
     }
@@ -155,23 +174,21 @@
     max-height: 0;
     visibility: hidden;
     overflow: hidden;
-    transition: .4s;
+    transition: 0.4s;
     display: block;
-    width: 100%;
+    padding-left: 40px;
 
     .main-menu-ul {
       width: 100%;
     }
 
-    li {
-      //border-top: 1px solid $boder-level1;
-    }
-
     &.is-open-menu {
       max-height: 2000px;
+      width: 100%;
       visibility: visible;
       overflow: hidden;
       transition: 1s;
+      background: $darkblue;
     }
   }
 }
