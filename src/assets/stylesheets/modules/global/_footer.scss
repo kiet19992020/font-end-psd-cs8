@@ -1,0 +1,55 @@
+
+@include media-breakpoint-down(sm) {
+  .footer {
+    .footer-logo {
+      margin: 0 auto;
+      @include sizeEx(206px,79px);
+      background-color: $white;
+      background-repeat: no-repeat;
+      background-image: url(../images/logo.png);
+      background-position: center;
+    }
+    .footer-item-col {
+      margin: 44px 51px 3px;
+      text-align: center;
+      letter-spacing: normal;
+      line-height: normal;
+    }
+    .footer-login {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      input {
+        @include sizeEx(293px,46px);
+        padding: 0 20px 0 13px;
+      }
+    }
+  }
+
+  .footer-menu {
+    margin-bottom: 50px;
+
+    li {
+      line-height: (20/14);
+      margin-bottom: 20px;
+    }
+
+  }
+
+  .footer-copyright {
+
+    @include sizeEx(308px,27px);
+    @include font($ssp,10px,$white,normal,normal);
+    margin: 57px 0 0;
+    font-stretch: normal;
+    line-height: 2.7;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  .social {
+    text-align: center;
+    color: $white;
+  }
+}
+

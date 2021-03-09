@@ -1,0 +1,192 @@
+.btn {
+  @include sizeEx(257px,58px);
+  margin-bottom: 20px;
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  letter-spacing: 0.19px;
+  border: $btn-border-width solid transparent;
+  @include button-size(0, 0, $btn-font-size, $btn-line-height, 0);
+}
+
+
+///primary
+.btn-primary {
+  color: $white;
+  background-color: $blue;
+  border-color: $blue;
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: darken($blue, 7.5%);
+    border-color: darken($blue, 7.5%);
+  }
+}
+
+.btn-outline-primary {
+  color: $blue;
+  border-color: $blue;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $blue;
+    border-color: $blue;
+  }
+}
+
+////dark
+.btn-dark {
+  color: $white;
+  background-color: $black;
+  border-color: $black;
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: darken($blue, 7.5%);
+    border-color: darken($blue, 7.5%);
+  }
+}
+
+.btn-outline-dark {
+  color: $black;
+  border-color: $black;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $black;
+    border-color: $black;
+  }
+}
+
+///link
+.btn-link {
+  color: $darkblue;
+  background-color: $white;
+  border-color: $darkblue;
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: darken($blue, 7.5%);
+    border-color: darken($blue, 7.5%);
+  }
+}
+
+.btn-outline-link {
+  color: $white;
+  border-color: $darkblue;
+  background-color: $darkblue;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $darkblue;
+    border-color: $darkblue;
+  }
+}
+///info
+
+.btn-info {
+  color: $darkblue;
+  background-color: $info;
+  border-color: $info;
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: darken($blue, 7.5%);
+    border-color: darken($blue, 7.5%);
+  }
+}
+
+.btn-outline-info {
+  color: $info;
+  border-color: $info;
+  background-color: $darkblue;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $darkblue;
+    border-color: $info;
+  }
+}
+//darkblue
+
+.btn-darkblue {
+  color: $black;
+  background-color: $blue;
+  border-color: $blue;
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: darken($blue, 7.5%);
+    border-color: darken($blue, 7.5%);
+  }
+}
+
+.btn-outline-darkblue {
+  color: $blue;
+  border-color: $blue;
+  background-color: $black;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $darkblue;
+    border-color: $info;
+  }
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+
+  // Vertically space out multiple block buttons
+  +.btn-block {
+    margin-top: $btn-block-spacing-y;
+  }
+}
+
+.text-center {
+  .btn {
+    margin: 0 5px 10px;
+  }
+}
+
+
+//btn boder_left
+
+.button-secondary {
+  @include sizeEx(188px,58px);
+  margin: 0 0 0 17px;
+  @include font($jt,16px,$blue,600,normal);
+  font-stretch: normal;
+  line-height: 2.44;
+  letter-spacing: 0.19px;
+}
+.button-secondary-dark {
+  @include sizeEx(188px,58px);
+  margin: 0 0 0 17px;
+  @include font($jt,16px,$black,600,normal);
+  font-stretch: normal;
+  line-height: 2.44;
+  letter-spacing: 0.19px;
+}
+.button-secondary-link {
+  @include sizeEx(188px,58px);
+  margin: 0 0 0 17px;
+  @include font($jt,16px,$white,600,normal);
+  font-stretch: normal;
+  line-height: 2.44;
+  letter-spacing: 0.19px;
+}
+
+
