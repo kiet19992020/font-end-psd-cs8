@@ -1,6 +1,5 @@
 .btn {
-  @include sizeEx(257px,58px);
-  margin-bottom: 20px;
+
   display: inline-block;
   font-weight: $btn-font-weight;
   text-align: center;
@@ -8,7 +7,7 @@
   user-select: none;
   letter-spacing: 0.19px;
   border: $btn-border-width solid transparent;
-  @include button-size(0, 0, $btn-font-size, $btn-line-height, 0);
+  padding: 13px 95px;
 }
 
 
@@ -208,3 +207,9 @@
   background-color: transparent;
 }
 
+.line {
+  width: 293px;
+  height: 1px;
+  // margin: 13px 42px 46px 40px;
+  border: solid 1px #1c9bd6;
+}

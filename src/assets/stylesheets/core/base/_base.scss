@@ -22,12 +22,7 @@ html {
   overflow-x: hidden;
 
 }
-body {
-  @include font($ssp,18px,#1e5091, normal, normal);
-  font-stretch: normal;
-  line-height: 1.5;
-  letter-spacing: -0.12px;
-}
+
 h1,
 h2,
 h3,
@@ -56,7 +51,9 @@ h6,
 ol,
 ul {
   li {
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    list-style: none;
+
   }
 }
 
@@ -82,46 +79,52 @@ a {
     transition: .25s all;
   }
 }
-h1 {
-  @include font($jt,50px,$black, 300px, normal);
+.h1,
+h1
+ {
+  @include font($jt,3.125rem,$darkblue);
   font-stretch: normal;
   line-height: 1.04;
   letter-spacing: -0.33px;
 }
+.h2,
 h2 {
-  @include font($jt,36px,$black, 300px, normal);
+  @include font($jt,2.0625rem,$darkblue);
   font-stretch: normal;
   line-height: 1.08;
   letter-spacing: 1px;
 }
+.h3,
 h3 {
-  @include font($ssp,26px,$black, normal, normal);
+  @include font($ssp,1.625rem,$darkblue);
   font-stretch: normal;
   line-height: 1.38;
   letter-spacing: 0.31px;
 }
+.h4,
 h4 {
-  @include font($jt,28px,$black, 600, normal);
+  @include font($jt,1.75rem,$darkblue, 600);
   font-stretch: normal;
   line-height: 1.32;
   letter-spacing: 0.14px;
-
 }
+.h5,
 h5 {
-  @include font($jt,24px,$black, 600, normal);
+  @include font($jt,1.5rem,$darkblue, 600);
   font-stretch: normal;
   line-height: 1.42;
   letter-spacing: normal;
 }
+.h5,
 h6 {
-  @include font($jt,20px,$black, normal, normal);
+  @include font($jt,1.25rem,$darkblue);
   font-stretch: normal;
   line-height: 1.35;
   letter-spacing: 0.5px;
 }
 
-p {
-  @include font($ssp,16px,$black, normal, normal);
+.p {
+  @include font($ssp,16px,$darkblue, normal, normal);
   font-stretch: normal;
   line-height: 1.56;
   letter-spacing: normal;

@@ -1,5 +1,5 @@
 .main-menu-ul {
-  padding: 1.5em 0;
+  padding: 1em 0;
   .row > ul,
   .menu-child {
     padding-left: 15px;
@@ -10,7 +10,7 @@
 
     // text-transform: uppercase;
     > a {
-      padding: 15px 0px;
+      padding: 5px 0px;
     }
   }
 
@@ -52,7 +52,7 @@
     }
 
     a {
-      padding: 10px 15px;
+      // padding: 10px 15px;
     }
   }
 
@@ -78,7 +78,7 @@
 
 .hamburger-menu {
   padding: 0;
-  margin-top: 8px;
+  // margin-top: 8px;
   cursor: pointer;
   background: $white;
 
@@ -135,28 +135,11 @@
 }
 
 @include media-breakpoint-down(lg) {
-  .menu-search {
-    margin: auto;
-    input {
-      width: 294px;
-      height: 34px;
-      // margin: 26px 41px 32px 40px;
-      background: transparent;
-      // padding: 6px 9px 6px 262px;
-      border: solid 1px $white;
-      color: $white;
-    }
-    .icomoon {
-      margin: 43px 0px -4px -26px;
-      
-      position: absolute;
-    }
-  }
   .menu-login {
-    input {
+    a {
       width: 294px;
       height: 46px;
-      padding: 0 20px 0 13px;
+      // padding: 0 20px 0 13px;
     }
   }
   .is-open-child {
@@ -176,8 +159,21 @@
     overflow: hidden;
     transition: 0.4s;
     display: block;
-    padding-left: 40px;
-
+    padding-left: 31px;
+    .menu-search {
+      margin-top: -2.5rem;
+      input {
+        @include sizeEx(294px,34px);
+        background: transparent;
+        border: solid 1px $white;
+        color: $white;
+      }
+      .icomoon {
+        margin: 43px 0 -4px -26px;
+        position: absolute;
+        color: $white;
+      }
+    }
     .main-menu-ul {
       width: 100%;
     }
