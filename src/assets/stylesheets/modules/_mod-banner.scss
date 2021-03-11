@@ -22,7 +22,8 @@
     padding: 147px 45px 85px 0;
   }
   .banner-text {
-    @include sizeEx(293px, 123px);
+    max-width: 100%;
+    height: auto;
     margin: 48px 1px 46px 23px;
   }
   .title_banner {

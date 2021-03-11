@@ -14,23 +14,21 @@
 
 @include media-breakpoint-down(lg) {
   .header {
-    line-height: 102px;
-
     .navbar {
       display: block;
       width: 100%;
-
     }
     .icon-close {
       color: $blue;
-
     }
   }
+  .header-mobile {
+    padding: 28px 0;
+  }
   .header-logo {
-    max-width: 100px;
+    max-width: 200px;
     padding-left: 15px;
   }
-
   html.is-open-menu,
   html.is-open-menu body {
     overflow: hidden;
@@ -43,6 +41,7 @@
 
     }
     .header {
+
       // bottom: 0;
       // overflow-y: auto;
     }

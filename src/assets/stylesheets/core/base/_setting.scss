@@ -67,7 +67,6 @@ $gray-100: #ebebeb !default;
 // $gray-800: #343a40 !default;
 $gray-900: #00142a !default;
 
-
 $grays: ( // 100: $gray-100,
   // 200: $gray-200,
   // 300: $gray-300,
@@ -119,7 +118,7 @@ $theme-colors: (
 
 /* body */
 $body-bg: $white !default;
-$body-color: $gray-900 !default;
+$body-color: $darkblue !default;
 
 /* color heading */
 // set color for heading
@@ -193,19 +192,19 @@ $font-weight-base : 400;
 
 /* font heading */
 
-$h1-font-size : rem(40);
-$h2-font-size : rem(33);
-$h3-font-size : rem(24);
-$h4-font-size : rem(20);
-$h5-font-size : rem(14);
-$h6-font-size : rem(16);
+$h1-font-size : rem(50);
+$h2-font-size : rem(36);
+$h3-font-size : rem(26);
+$h4-font-size : rem(28);
+$h5-font-size : rem(25);
+$h6-font-size : rem(20);
 
 /* heading custom */
 
 $headings-margin-bottom: 1rem !default;
-$headings-font-family: inherit !default;
+$headings-font-family: $jt !default;
 $headings-font-weight: inherit !default;
-$headings-line-height: 1.4 !default;
+// $headings-line-height: 1.4 !default;
 $headings-color: inherit !default;
 
 /* .form-control */

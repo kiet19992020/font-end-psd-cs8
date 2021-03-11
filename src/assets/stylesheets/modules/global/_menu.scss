@@ -1,5 +1,5 @@
 .main-menu-ul {
-  padding: 1em 0;
+  padding: 1.875rem 0;
   .row > ul,
   .menu-child {
     padding-left: 15px;
@@ -16,7 +16,6 @@
 
   li {
     position: relative;
-    color: $white;
     line-height: 1.2em;
 
     a {
@@ -137,8 +136,7 @@
 @include media-breakpoint-down(lg) {
   .menu-login {
     a {
-      width: 294px;
-      height: 46px;
+
       // padding: 0 20px 0 13px;
     }
   }
@@ -161,17 +159,36 @@
     display: block;
     padding-left: 31px;
     .menu-search {
-      margin-top: -2.5rem;
       input {
-        @include sizeEx(294px,34px);
+        padding: 1px 58px;
+        margin-bottom: 30px;
         background: transparent;
         border: solid 1px $white;
         color: $white;
       }
       .icomoon {
-        margin: 43px 0 -4px -26px;
+        margin: 10px 0 0 -23px;
         position: absolute;
         color: $white;
+      }
+    }
+    .menu_location {
+      ul {
+        margin-left: -30px;
+      }
+      a {
+        @include font($jt,13px,$white);
+      }
+    }
+    li {
+      color: white;
+    }
+    .menu-login {
+      .btn-outline-info {
+        padding: 7px 126px;
+      }
+      .btn-primary {
+        padding: 7px 95px;
       }
     }
     .main-menu-ul {

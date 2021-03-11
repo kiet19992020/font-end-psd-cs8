@@ -1,14 +1,17 @@
 @include media-breakpoint-up(lg) {
-  .main-menu-ul {
-    padding: 0;
 
+  .main-menu-ul {
+    top: 0;
+    right: 0;
+    position: absolute;
+    // padding: 30px;
     >li {
-      font-size: 1em;
+      font-size: em;
 
       >a {
         padding: 18px 15px;
+        color: $blue;
       }
-
       &:hover {
         .main-menu-dropdown {
           display: block;
@@ -16,34 +19,42 @@
       }
     }
 
-    .mega-dropdown {
-      position: static;
-    }
+    // .mega-dropdown {
+    //   position: static;
+    // }
   }
 
-  .main-menu-dropdown {
-    min-width: 200px;
-    width: 100%;
-    margin: 0;
-    // font-size: 1em;
-    // border: none;
-    background-color: $white;
-    box-shadow: 2px 9px 18px -6px rgba(0, 0, 0, .22);
+  // .main-menu-dropdown {
+  //   min-width: 200px;
+  //   width: 100%;
+  //   margin: 0;
+  //   // font-size: 1em;
+  //   // border: none;
+  //   background-color: $white;
+  //   box-shadow: 2px 9px 18px -6px rgba(0, 0, 0, .22);
 
-    .menu-child {
-      display: block;
-    }
-  }
+  //   .menu-child {
+  //     display: block;
+  //   }
+  // }
 
-  .navbar {
-    position: static;
-  }
+  // .navbar {
+  //   position: static;
+  // }
 }
 
 @include media-breakpoint-up(xl) {
   .main-menu-ul>li {
     >a {
-      padding: 22px 25px;
+      padding: 5px 38px;
+
     }
+    .btn {
+      padding: 5px 47px;
+      font-size: 16px;
+    }
+  }
+  .main-menu-ul {
+    padding: 3rem 0;
   }
 }
