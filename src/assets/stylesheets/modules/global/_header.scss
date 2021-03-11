@@ -2,7 +2,6 @@
   @include position(fixed, 0, 0, null, 0, 9999);
   @extend %add-tr;
   background-color: $white;
-
   &.pin-header {
     box-shadow: 2px 9px 18px -6px rgba(0, 0, 0, .22);
   }
@@ -14,12 +13,13 @@
 
 @include media-breakpoint-down(lg) {
   .header {
-    .navbar {
-      display: block;
-      width: 100%;
-    }
+    // .navbar {
+    //   display: block;
+    //   width: 100%;
+    // }
     .icon-close {
       color: $blue;
+
     }
   }
   .header-mobile {
@@ -29,6 +29,7 @@
     max-width: 200px;
     padding-left: 15px;
   }
+
   html.is-open-menu,
   html.is-open-menu body {
     overflow: hidden;
@@ -41,7 +42,6 @@
 
     }
     .header {
-
       // bottom: 0;
       // overflow-y: auto;
     }

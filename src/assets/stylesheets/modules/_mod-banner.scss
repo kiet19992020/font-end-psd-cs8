@@ -1,6 +1,7 @@
 // module 'Mod Banner'
 
 .mod-banner {
+  mix-blend-mode: multiply;
   text-align: center;
   background-image: linear-gradient(to bottom, rgba(238, 238, 238, 0) 12%, #1e5091 107%);
   position: relative;
@@ -8,21 +9,25 @@
     content: "";
     position: absolute;
     display: block;
-    top: 0;
-    left: 0;
-    opacity: 0.1;
+    bottom: 0;
+    right: 0;
+    opacity: .1;
     width: 100%;
     height: 100%;
-    @include background-size(cover);
+
+    // @include background-size(cover);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
     z-index: 1;
-    background-image: url(../images/locations_silicon-valley-expansion-svy02.jpg);
+    background-image: url(../images/HyperStack-img.jpg);
   }
   .banner-content {
     width: 375px;
     padding: 147px 45px 85px 0;
   }
   .banner-text {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin: 48px 1px 46px 23px;
   }
