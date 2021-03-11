@@ -170,7 +170,7 @@
   @include font($jt,16px,$blue,600,normal);
   font-stretch: normal;
   line-height: 2.44;
-  letter-spacing: 0.19px;
+  letter-spacing: .19px;
 }
 .button-secondary-dark {
   @include sizeEx(188px,58px);
@@ -178,7 +178,7 @@
   @include font($jt,16px,$black,600,normal);
   font-stretch: normal;
   line-height: 2.44;
-  letter-spacing: 0.19px;
+  letter-spacing: .19px;
 }
 .button-secondary-link {
   @include sizeEx(188px,58px);
@@ -186,7 +186,7 @@
   @include font($jt,16px,$white,600,normal);
   font-stretch: normal;
   line-height: 2.44;
-  letter-spacing: 0.19px;
+  letter-spacing: .19px;
 }
 
 
@@ -208,9 +208,3 @@
   background-color: transparent;
 }
 
-.line {
-  width: 293px;
-  height: 1px;
-  // margin: 13px 42px 46px 40px;
-  border: solid 1px #1c9bd6;
-}

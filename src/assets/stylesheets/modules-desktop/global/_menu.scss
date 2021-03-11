@@ -4,13 +4,14 @@
     top: 0;
     right: 0;
     position: absolute;
-    // padding: 30px;
+
     >li {
       font-size: em;
 
       >a {
-        padding: 18px 15px;
+        padding: 10px 15px;
         color: $blue;
+        border-right: 1px solid $blue;
       }
       &:hover {
         .main-menu-dropdown {
@@ -30,7 +31,7 @@
 @include media-breakpoint-up(xl) {
   .main-menu-ul>li {
     >a {
-      padding: 5px 38px;
+      padding: 5px 15px;
 
     }
     .btn {
@@ -39,6 +40,6 @@
     }
   }
   .main-menu-ul {
-    padding: 3rem 0;
+    // padding: 3rem 0;
   }
 }

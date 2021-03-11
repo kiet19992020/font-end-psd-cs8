@@ -1,4 +1,5 @@
 .header {
+
   @include position(fixed, 0, 0, null, 0, 9999);
   @extend %add-tr;
   background-color: $white;
@@ -13,21 +14,31 @@
 
 @include media-breakpoint-down(lg) {
   .header {
-    // .navbar {
-    //   display: block;
-    //   width: 100%;
-    // }
+    padding: 0;
+    background: $darkblue;
+    .navbar {
+
+      display: block;
+      width: 100%;
+    }
     .icon-close {
       color: $blue;
 
     }
   }
   .header-mobile {
-    padding: 28px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: -8px -20px;
+    padding: 23px 0;
+    background-color: $white;
+    // max-width: 100%;
   }
   .header-logo {
     max-width: 200px;
-    padding-left: 15px;
+
   }
 
   html.is-open-menu,
@@ -42,8 +53,10 @@
 
     }
     .header {
-      // bottom: 0;
-      // overflow-y: auto;
+      bottom: 0;
+      height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
     }
   }
 }
