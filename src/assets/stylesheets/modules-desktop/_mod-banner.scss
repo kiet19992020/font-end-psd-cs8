@@ -1,3 +1,9 @@
-.mod-banner {
-  
+@include media-breakpoint-up(lg) {
+  .mod-banner {
+    .banner-text {
+      width: 50%;
+      color: $black;
+    }
+  }
 }
+

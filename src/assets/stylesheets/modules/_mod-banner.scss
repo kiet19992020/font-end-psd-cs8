@@ -1,20 +1,22 @@
 // module 'Mod Banner'
 
 .mod-banner {
+  max-width: 100%;
+
   mix-blend-mode: multiply;
-  text-align: center;
   background-image: linear-gradient(to bottom, rgba(238, 238, 238, 0) 12%, #1e5091 107%);
   position: relative;
   &::after {
     content: "";
     position: absolute;
-    display: block;
-    bottom: 0;
-    right: 0;
-    opacity: .1;
-    width: 100%;
-    height: 100%;
 
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .1;
+
+    height: calc(100% - 55px);
     // @include background-size(cover);
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -23,27 +25,36 @@
     background-image: url(../images/HyperStack-img.jpg);
   }
   .banner-content {
-    width: 375px;
     padding: 147px 45px 85px 0;
   }
   .banner-text {
-    width: 100%;
-    height: auto;
+
     margin: 48px 1px 46px 23px;
   }
   .title_banner {
-    background-image: url(../images/HyperStack-logo-horiz-300x40.png);
-    @include sizeEx(330px, 49px);
-    margin: 0 0 48px;
-    background-repeat: no-repeat;
-  }
-  .btn-banner {
-    input {
-      padding: 8px 84px;
-      margin: 0 50px;
-    }
-    button {
-      margin: 20px 0 0 20px;
+    img {
+      margin-left: -44px;
     }
   }
+
+}
+@include media-breakpoint-down(lg) {
+  .mod-banner {
+    text-align: center;
+    .banner-content {
+      padding: 205px 0 105px;
+    }
+    .btn-banner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      input {
+        padding: 8px 14px;
+        min-width: 264px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
 }
