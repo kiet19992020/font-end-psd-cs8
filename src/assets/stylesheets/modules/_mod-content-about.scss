@@ -24,11 +24,6 @@
       .ab-slide-info {
         // padding: 33px 30px;
       }
-
-      img {
-        height: 100%;
-        width: 100%;
-      }
     }
   }
 }
@@ -80,12 +75,12 @@
       h4 {
         @include font($jt, 22px, $darkblue, 600);
         line-height: 1.09;
-        letter-spacing: -0.1px;
+        letter-spacing: -.1px;
       }
       p {
         @include font($ssp, 16px, $darkblue);
         line-height: 1.44;
-        letter-spacing: -0.11px;
+        letter-spacing: -.11px;
       }
     }
     .ab-slide-btn {
@@ -93,7 +88,9 @@
         color: $blue;
       }
       img {
-        padding: 25px;
+        // padding: 25px;
+        margin-top: 10px;
+        max-width: 35px;
       }
     }
 

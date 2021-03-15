@@ -20,13 +20,25 @@
     }
     .about-slide {
       box-shadow: 0 0 5px 1px $gray-100;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .ab-slide-btn {
+      img {
+        padding-top: 10px;
+        margin-left: 20px;
+        height: auto;
+        max-width: 35px;
+      }
     }
     .about-info {
       .about-tile {
         text-align: center;
       }
       .ab-slide-info {
-        padding: 23px;
+        padding: 28px;
       }
       .about-text {
         .card {
