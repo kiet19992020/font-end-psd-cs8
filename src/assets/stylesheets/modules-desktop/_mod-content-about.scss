@@ -18,7 +18,21 @@
         }
       }
     }
+    .about-slide {
+      box-shadow: 0 0 5px 1px $gray-100;
+    }
     .about-info {
+      .about-tile {
+        text-align: center;
+      }
+      .ab-slide-info {
+        padding: 23px;
+      }
+      .about-text {
+        .card {
+          padding: 33px 10px;
+        }
+      }
     }
   }
 }

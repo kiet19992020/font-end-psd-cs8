@@ -123,15 +123,24 @@
           <h5>
             <a href="">CONTACT</a>
           </h5>
-          <ul class="list-unstyled d-none d-md-block footer-menu last-mb-none">
-            <li><div class="social">
-              {% include "modules/global/social.html" %}
-            </div>
+          <ul class="list-unstyled  footer-menu last-mb-none">
+            <li>
+              <div class="social">
+                {% include "modules/global/social.html" %}
+              </div>
             </li>
           </ul>
-          <p>
+          <p class="d-none d-lg-block">
             <a href="#" class="text-decoration-none  btn btn-outline-darkblue">TAKE A TOUR</a>
           </p>
+          <div class="btn-footer d-lg-none">
+            <p>
+              <a href="#" class="text-decoration-none  btn btn-outline-darkblue">LOGIN</a>
+            </p>
+            <p>
+              <a href="#" class="text-decoration-none btn btn-primary">TAKE A TOUR</a>
+            </p>
+          </div>
         </div>
       </div>
 

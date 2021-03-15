@@ -11,14 +11,12 @@
   }
   .about-info {
     .about-tile {
-      text-align: center;
       hr {
         width: 100px;
         background-color: $blue;
       }
     }
     .about-slide {
-      box-shadow: 0 0 5px 1px $gray-100;
       .img-about {
         padding: 0;
         width: 100%;
@@ -32,16 +30,11 @@
         width: 100%;
       }
     }
-    .about-text {
-      .card {
-        padding: 33px 10px;
-      }
-    }
   }
 }
 @include media-breakpoint-down(lg) {
   .about-note {
-    margin: 0 25px;
+    margin: 0 41px;
     padding: 76px 30px;
     .about-note-text {
       #img-top {
@@ -54,9 +47,74 @@
         bottom: -120px;
         right: 40%;
       }
+      h4 {
+        @include font($jt, 22px, $darkblue, 600);
+        line-height: 1.45;
+        letter-spacing: 0.46px;
+      }
     }
   }
+  .about-info {
+    .about-tile {
+      h5 {
+        @include font($jt, 18px, $darkblue);
+        line-height: 1.17;
+        letter-spacing: -0.12px;
+        padding-right: 50px;
+      }
+      hr {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .about-slide {
+    margin: 0 15px;
+    box-shadow: 0 0 10px 5px #52a3e670;
+    .img-about {
+      padding: 0;
+      width: 100%;
+    }
+    .ab-slide-info {
+      padding-top: 25px;
+      h4 {
+        @include font($jt, 22px, $darkblue, 600);
+        line-height: 1.09;
+        letter-spacing: -0.1px;
+      }
+      p {
+        @include font($ssp, 16px, $darkblue);
+        line-height: 1.44;
+        letter-spacing: -0.11px;
+      }
+    }
+    .ab-slide-btn {
+      a {
+        color: $blue;
+      }
+      img {
+        padding: 25px;
+      }
+    }
+
+    // img {
+    //   height: 100%;
+    //   width: 100%;
+    // }
+  }
   .card {
-    margin: 10px;
+    padding: 28px 0 0;
+    margin-top: 22px;
+    margin-right: 12px;
+    .card-body {
+      padding: 5px 20px;
+      h6 {
+        @include font($jt, 18px,$white);
+        margin-bottom: 40px;
+      }
+      a {
+        @include font($jt,14px,$white);
+      }
+    }
   }
 }

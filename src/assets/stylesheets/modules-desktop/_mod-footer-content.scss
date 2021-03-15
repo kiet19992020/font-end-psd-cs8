@@ -1,9 +1,11 @@
 @include media-breakpoint-up(lg) {
   .mod-footer-content {
+    padding: 55px 0;
     .content-cta {
       // padding: 156px;
       .sign-up-cta {
         padding: 85px 40px;
+        border-right: 1px solid $white;
         input {
           border: none;
           border-bottom: 1px solid $white;

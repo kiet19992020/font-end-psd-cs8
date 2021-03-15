@@ -27,7 +27,9 @@
     @include font($ssp,10px,$white);
   }
   .social {
-    color: $white;
+    .icomoon {
+      color: $white;
+    }
   }
 }
 
@@ -36,11 +38,20 @@
     padding: 0;
     .footer-logo {
       margin: 0 auto;
-      max-width: 206px
+      max-width: 206px;
+      margin-bottom: 65px;
     }
     .footer-item-col {
-      a {
-        color: $blue;
+      p {
+        a {
+          min-width: 294px;
+          padding: 10px 0;
+          @include font($jt, 14px, $white, 600);
+          // width: 100%;
+        }
+      }
+      h5 {
+        line-height: .8;
       }
       text-align: center;
       // margin: 0 51px 3px;
@@ -49,6 +60,7 @@
       input {
         margin: 10px 0;
         padding: 7px 101px;
+
       }
     }
     .footer-copyright {
@@ -56,6 +68,9 @@
       justify-content: center;
       padding: 20px 0;
 
+    }
+    .social {
+      margin-top: 20px;
     }
   }
 }

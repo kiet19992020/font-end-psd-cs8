@@ -3,18 +3,17 @@
   .content {
     .content-slide {
       background-repeat: no-repeat;
-      background-position: center center;
+      background-position: bottom center;
       background-size: cover;
-      // height: 632px;
       max-width: 100%;
       color: $white;
       background-image: url(../images/HyperSTACK-buildingonly.jpg);
     }
     .content-text {
-
+      padding: 30px 45px;
       .text-slide {
-        margin: 0;
-        padding: 50px 30px;
+        padding: 80px 0;
+        max-width: 568px;
       }
       hr {
         width: 100px;
@@ -22,6 +21,41 @@
         border: none;
         background-color: $blue;
         margin-left: 0;
+      }
+    }
+  }
+}
+@include media-breakpoint-down(lg) {
+  .content {
+    .content-slide {
+      min-height: 214px;
+      h2,
+      h3 {
+        font-size: 28px;
+        @include font($jt, 28px, $white, 600);
+        line-height: 0.4;
+        letter-spacing: 0.14px;
+      }
+    }
+    .content-text {
+      // padding: 30px 45px;
+      .text-slide {
+        padding: 80px 0px;
+        max-width: 568px;
+        h5 {
+          @include font($jt, 18px, $darkblue);
+          line-height: 1.17;
+          letter-spacing: -0.12px;
+        }
+        hr {
+          margin: 19px 0;
+        }
+        p {
+          @include font($jt, 16px, $darkblue);
+          line-height: 1.31;
+          letter-spacing: -.11px;
+          padding: 5px 0;
+        }
       }
     }
   }

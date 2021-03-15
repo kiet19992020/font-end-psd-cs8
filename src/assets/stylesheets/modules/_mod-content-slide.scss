@@ -15,7 +15,7 @@
       h6 {
         color: $white;
       }
-      transform: translate(55%, 55%);
+      transform: translate(50%, 55%);
     }
     .sl-main-img {
       &::before {
@@ -43,6 +43,67 @@
       margin-left: 20px;
       button {
         color: $blue;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .mod-content-slide {
+    padding: 50px 0;
+    .slide-title {
+      padding: 0 5px;
+      h5 {
+        @include font($jt, 18px, $darkblue);
+        line-height: 1.17;
+        letter-spacing: -.12px;
+      }
+      hr {
+        background-color: $blue;
+        width: 100px;
+        margin-top: 5px;
+        margin-left: 0;
+      }
+    }
+    .slide-main {
+      .sl-img-items {
+        padding: 35px;
+      }
+      .items-content {
+        // padding: 10px 0;
+        h5,
+        h6 {
+          color: $white;
+        }
+        transform: translate(50%, 55%);
+      }
+      .sl-main-img {
+        &::before {
+          content: "";
+          top: 0;
+          bottom: -52px;
+          left: 4px;
+          width: 1px;
+          position: absolute;
+          background-color: $blue;
+        }
+        &::after {
+          content: "";
+          bottom: 6px;
+          left: -28px;
+          width: 100%;
+          height: 1px;
+          max-width: 505px;
+          position: absolute;
+          background-color: $blue;
+        }
+      }
+      .sl-main-btn {
+        margin-top: 20px;
+        margin-left: 20px;
+        button {
+          color: $blue;
+        }
       }
     }
   }

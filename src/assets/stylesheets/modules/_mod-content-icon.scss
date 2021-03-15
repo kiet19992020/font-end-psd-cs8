@@ -6,7 +6,6 @@
   .icon-title {
     color: $white;
     text-align: center;
-    // padding: 0 100px;
     hr {
       background-color: $blue;
       width: 100px;
@@ -18,7 +17,6 @@
   .icon-content {
     color: $white;
     .icon-item {
-      // padding: 5p;
       h6 {
         color: $blue;
       }
@@ -29,21 +27,39 @@
   .mod-content-icon {
     padding: 60px 20px;
     .icon-title {
+      padding: 0 42px;
       color: $white;
       text-align: center;
       hr {
         background-color: $blue;
         width: 100px;
+        margin-top: 25px;
+        margin-bottom: 25px;
       }
       p {
         padding: 5px;
+        @include font($ssp, 16px, $white);
+        line-height: 1.35;
+        letter-spacing: -0.33px;
+      }
+      h2 {
+        @include font($jt, 28px, $white, 600);
+        line-height: 1.25;
+        letter-spacing: 0.14px;
       }
     }
     .icon-content {
       .icon-item {
-        padding: 5px;
+        h6 {
+          @include font($jt, 16px, $blue, 600);
+          line-height: 1.06;
+        }
+        p {
+          @include font($ssp, 14px, $white);
+          line-height: 1.29;
+          letter-spacing: -.09px;
+        }
       }
     }
   }
-
 }

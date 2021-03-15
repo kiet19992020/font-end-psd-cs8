@@ -4,17 +4,11 @@
   background-color: #e4f3fa;
   .design-content {
     .design-text {
-      .desgin-text-content {
-        padding: 0 20px;
-      }
       .ds-text-items {
       }
       h6 {
-        font-weight: bold;
+        font-weight: 600;
         color: $black;
-      }
-      .design-text-title {
-        padding: 0 20px;
       }
       hr {
         width: 100px;
@@ -23,13 +17,9 @@
       }
     }
     .desgin-slide {
-      .ds-slide-img {
-
-      }
       .dg-slide-btn {
         padding: 30px 0;
         letter-spacing: 10px;
-
       }
       button {
         color: $blue;
@@ -50,8 +40,38 @@
     }
     .design-text {
       padding: 0;
+      .design-text-title {
+        padding: 0 46px;
+        h5,
+        h6 {
+          @include font($jt, 18px, $darkblue);
+          line-height: 1.17;
+          letter-spacing: -.12px;
+        }
+        hr {
+          margin-bottom: 20px;
+          margin-top: 0;
+        }
+      }
+      .ds-slide-img {
+        img {
+          min-height: 234px;
+        }
+      }
       .desgin-text-content {
-        padding: 5px;
+        padding: 0px 45px;
+        h6 {
+          @include font($jt, 16px, $black, 600);
+          line-height: .05;
+        }
+        p {
+          @include font($ssp, 16px, $darkblue);
+          line-height: 1.31;
+          letter-spacing: -.11px;
+        }
+        .ds-text-items {
+          padding: 11px 0;
+        }
       }
     }
   }
