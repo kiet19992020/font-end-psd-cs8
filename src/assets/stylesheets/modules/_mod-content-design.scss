@@ -1,0 +1,58 @@
+// module 'Mod Content Design'
+.mod-content-design {
+  margin-top: 100px;
+  background-color: #e4f3fa;
+  .design-content {
+    .design-text {
+      .desgin-text-content {
+        padding: 0 20px;
+      }
+      .ds-text-items {
+      }
+      h6 {
+        font-weight: bold;
+        color: $black;
+      }
+      .design-text-title {
+        padding: 0 20px;
+      }
+      hr {
+        width: 100px;
+        margin: 25px 0;
+        background-color: $blue;
+      }
+    }
+    .desgin-slide {
+      .ds-slide-img {
+
+      }
+      .dg-slide-btn {
+        padding: 30px 0;
+        letter-spacing: 10px;
+
+      }
+      button {
+        color: $blue;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .mod-content-design {
+    padding: 60px 0;
+    .desgin-slide {
+      .dg-slide-btn {
+        padding: 30px 0;
+        letter-spacing: 10px;
+        text-align: center;
+      }
+    }
+    .design-text {
+      padding: 0;
+      .desgin-text-content {
+        padding: 5px;
+      }
+    }
+  }
+}

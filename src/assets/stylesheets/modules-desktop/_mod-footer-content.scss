@@ -1,0 +1,25 @@
+@include media-breakpoint-up(lg) {
+  .mod-footer-content {
+    .content-cta {
+      // padding: 156px;
+      .sign-up-cta {
+        padding: 85px 40px;
+        input {
+          border: none;
+          border-bottom: 1px solid $white;
+          padding: 10px 0;
+          outline: none;
+          width: 80%;
+          background: transparent;
+        }
+      }
+      .submit-cta {
+        padding: 85px 40px;
+        a {
+          padding: 8px 20px;
+          min-width: 280px;
+        }
+      }
+    }
+  }
+}

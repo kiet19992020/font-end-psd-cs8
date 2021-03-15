@@ -1,0 +1,49 @@
+// module 'Mod Content Icon'
+.mod-content-icon {
+  background-image: linear-gradient(164deg, #0a2035 45%, #1c467f 122%);
+  padding: 121px 298px 73px 341px;
+  position: relative;
+  .icon-title {
+    color: $white;
+    text-align: center;
+    // padding: 0 100px;
+    hr {
+      background-color: $blue;
+      width: 100px;
+    }
+    p {
+      padding: 30px 20px;
+    }
+  }
+  .icon-content {
+    color: $white;
+    .icon-item {
+      // padding: 5p;
+      h6 {
+        color: $blue;
+      }
+    }
+  }
+}
+@include media-breakpoint-down(lg) {
+  .mod-content-icon {
+    padding: 60px 20px;
+    .icon-title {
+      color: $white;
+      text-align: center;
+      hr {
+        background-color: $blue;
+        width: 100px;
+      }
+      p {
+        padding: 5px;
+      }
+    }
+    .icon-content {
+      .icon-item {
+        padding: 5px;
+      }
+    }
+  }
+
+}

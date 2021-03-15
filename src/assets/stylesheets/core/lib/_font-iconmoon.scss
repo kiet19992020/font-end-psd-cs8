@@ -25,6 +25,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-arrow-thin-right:before {
+  content: "\e917";
+}
+.icon-arrow-thin-left:before {
+  content: "\e918";
+}
 .icon-arrow:before {
   content: "\e919";
 }

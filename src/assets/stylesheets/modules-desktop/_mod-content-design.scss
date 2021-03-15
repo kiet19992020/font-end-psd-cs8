@@ -1,0 +1,26 @@
+@include media-breakpoint-up(lg) {
+  .mod-content-design {
+    padding: 50px 20px;
+    .design-content {
+      .design-text {
+        padding: 5px 25px;
+        .desgin-text-content {
+        }
+      }
+      .design-text-title {
+        padding: 5px;
+      }
+    }
+    .desgin-slide {
+      .ds-slide-img {
+        margin-top: -90px;
+        width: calc(45vw + 10px);
+        height: 100%;
+      }
+      .dg-slide-btn {
+        padding: 30px 0;
+        letter-spacing: 10px;
+      }
+    }
+  }
+}

@@ -112,8 +112,10 @@ h6 {
   letter-spacing: .5px;
 }
 
-.p {
-  line-height: 1.56;
+.bd-p2 {
+  @include font($ssp,18px,$darkblue);
+  line-height: 1.5;
+  letter-spacing: -.12px;
 }
 
 

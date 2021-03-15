@@ -1,0 +1,28 @@
+// module 'Mod Content Image'
+.mod-content-image {
+  .content {
+    .content-slide {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      // height: 632px;
+      max-width: 100%;
+      color: $white;
+      background-image: url(../images/HyperSTACK-buildingonly.jpg);
+    }
+    .content-text {
+
+      .text-slide {
+        margin: 0;
+        padding: 50px 30px;
+      }
+      hr {
+        width: 100px;
+        height: 1px;
+        border: none;
+        background-color: $blue;
+        margin-left: 0;
+      }
+    }
+  }
+}

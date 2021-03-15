@@ -1,0 +1,64 @@
+// module 'Mod Footer Content'
+.mod-footer-content {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 55px 0;
+  max-width: 100%;
+  color: $white;
+  // @include position(relative, 0, 0, 0, 0, null);
+  background-image: url(../images/bk-CTA.png);
+  .content-cta {
+    // padding: 156px;
+    .sign-up-cta {
+      padding: 0 40px;
+      input {
+        border: none;
+        border-bottom: 1px solid $white;
+        padding: 10px 0;
+        outline: none;
+        background: transparent;
+      }
+      ::placeholder {
+        color: $white;
+      }
+      button {
+        color: $white;
+        background: transparent;
+        border: none;
+        border-left: 1px solid $white;
+      }
+    }
+
+    .submit-cta {
+      padding: 0 40px;
+      a {
+        padding: 8px 20px;
+        min-width: 280px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .content-cta {
+    // padding: 156px;
+    .sign-cta-mb{
+      min-width: 280px;
+      input {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      a {
+        min-width: 280px;
+      }
+
+    }
+    hr {
+      margin: 50px 20px;
+      background-color: $white;
+      width: 90%;
+      text-align: center;
+    }
+  }
+}

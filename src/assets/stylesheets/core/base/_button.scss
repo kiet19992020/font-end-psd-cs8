@@ -79,8 +79,8 @@
 
 .btn-outline-link {
   color: $white;
-  border-color: $darkblue;
-  background-color: $darkblue;
+  border-color: $white;
+  background-color: transparent;
 
   &:hover,
   &:focus {
@@ -165,7 +165,7 @@
 
 .button-secondary {
   @include sizeEx(188px,58px);
-  margin: 0 0 0 17px;
+
   @include font($jt,16px,$blue,600,normal);
   font-stretch: normal;
   line-height: 2.44;
@@ -173,7 +173,7 @@
 }
 .button-secondary-dark {
   @include sizeEx(188px,58px);
-  margin: 0 0 0 17px;
+
   @include font($jt,16px,$black,600,normal);
   font-stretch: normal;
   line-height: 2.44;
@@ -181,7 +181,7 @@
 }
 .button-secondary-link {
   @include sizeEx(188px,58px);
-  margin: 0 0 0 17px;
+
   @include font($jt,16px,$white,600,normal);
   font-stretch: normal;
   line-height: 2.44;

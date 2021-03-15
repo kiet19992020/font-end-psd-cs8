@@ -1,0 +1,24 @@
+@include media-breakpoint-up(lg) {
+  .mod-content-about {
+    padding: 100px 0;
+
+    .about-note {
+      margin-right: 550px;
+      .about-note-text {
+        padding: 50px 100px;
+        #img-top {
+          position: absolute;
+          top: -25px;
+          right: 45%;
+        }
+        #img-bottom {
+          position: absolute;
+          bottom: -30px;
+          right: 45%;
+        }
+      }
+    }
+    .about-info {
+    }
+  }
+}
