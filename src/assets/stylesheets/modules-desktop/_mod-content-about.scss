@@ -1,15 +1,19 @@
 @include media-breakpoint-up(lg) {
   .mod-content-about {
     padding: 100px 0;
-
     .about-note {
-      margin-right: 550px;
+      width: 81%;
       .about-note-text {
-        padding: 50px 100px;
+        padding: 122px 100px;
+        left: 97px;
+        top: 7px;
         #img-top {
           position: absolute;
           top: -25px;
           right: 45%;
+        }
+        h4 {
+          @include font($jt, 28px, #1e5091, 600);
         }
         #img-bottom {
           position: absolute;
@@ -18,32 +22,51 @@
         }
       }
     }
+    .img-about {
+      background-image: url(../images/POR03-Option-1_Birds-Eye-768x412.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      max-width: 312px;
+      width: 100%;
+    }
     .about-slide {
       box-shadow: 0 0 5px 1px $gray-100;
-      img {
-        height: 100%;
-        width: 100%;
-      }
     }
     .ab-slide-btn {
       img {
-        padding-top: 10px;
+        padding-top: 25px;
         margin-left: 20px;
-        height: auto;
+
         max-width: 35px;
       }
     }
     .about-info {
+      .container {
+        max-width: 1320px;
+      }
       .about-tile {
         text-align: center;
       }
       .ab-slide-info {
-        padding: 28px;
+        padding: 56px 21px 14px 10px;
+      }
+      .ab-slide-btn {
+        p {
+          padding: 16px 0 23px;
+        }
       }
       .about-text {
         .card {
-          padding: 33px 10px;
+          padding: 0 10px;
         }
+      }
+    }
+    .card-body {
+      h6 {
+        padding-top: 40px;
+      }
+      p {
+        padding-top: 40px;
       }
     }
   }

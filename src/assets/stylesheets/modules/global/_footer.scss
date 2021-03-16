@@ -1,16 +1,27 @@
 .footer {
   padding: 90px 0 20px;
   text-transform: uppercase;
-
+  .container {
+    max-width: 1362px;
+  }
   .footer-item-col {
-    a {
-      color: $blue
+    padding: 0;
+    p {
+      a {
+        margin-top: 20px;
+        min-width: 199px;
+        padding: 12px 10px;
+      }
     }
     ul {
       padding: 2px;
     }
     li {
-      color: $white
+      color: $white;
+      margin-bottom: 7px;
+    }
+    h5 {
+      color: $blue;
     }
   }
   .footer-logo {
@@ -21,10 +32,12 @@
     background-image: url(../images/logo.png);
     // margin-top: -90px;
   }
+  .col-menu-footer {
+    padding: 0;
+  }
   .footer-copyright {
-
-    @include sizeEx(308px,27px);
-    @include font($ssp,10px,$white);
+    @include sizeEx(308px, 27px);
+    @include font($ssp, 10px, $white);
   }
   .social {
     .icomoon {
@@ -42,36 +55,33 @@
       margin-bottom: 65px;
     }
     .footer-item-col {
+      text-align: center;
       p {
         a {
           min-width: 294px;
-          padding: 10px 0;
-          @include font($jt, 14px, $white, 600);
+          padding: 12px 0;
+          @include font($jt, 14px, null, 600);
           // width: 100%;
         }
       }
       h5 {
-        line-height: .8;
+        line-height: 0.8;
       }
-      text-align: center;
-      // margin: 0 51px 3px;
     }
     .footer-login {
       input {
         margin: 10px 0;
         padding: 7px 101px;
-
       }
     }
     .footer-copyright {
       display: flex;
       justify-content: center;
       padding: 20px 0;
-
     }
     .social {
       margin-top: 20px;
+      margin-bottom: 5px;
     }
   }
 }
-

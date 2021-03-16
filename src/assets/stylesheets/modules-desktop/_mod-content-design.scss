@@ -6,7 +6,11 @@
         padding: 5px 25px;
 
       }
+      h6 {
+        @include font($jt,20px,#205192);
+        line-height: 1.35;
 
+      }
     }
     .desgin-slide {
       .ds-slide-img {

@@ -82,12 +82,13 @@ a {
 .h1,
 h1
  {
-
+  font-weight: 300;
   line-height: 1.04;
   letter-spacing: -.33px;
 }
 .h2,
 h2 {
+  font-weight: 300;
   line-height: 1.08;
   letter-spacing: 1px;
 }
@@ -99,6 +100,7 @@ h3 {
 }
 .h4,
 h4 {
+  font-weight: 600;
   line-height: 1.32;
   letter-spacing: .14px;
 }

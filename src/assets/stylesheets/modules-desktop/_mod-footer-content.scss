@@ -1,25 +1,32 @@
 @include media-breakpoint-up(lg) {
   .mod-footer-content {
-    padding: 55px 0;
+    padding: 97px 0px;
     .content-cta {
-      // padding: 156px;
       .sign-up-cta {
-        padding: 85px 40px;
+        padding: 59px 11px;
         border-right: 1px solid $white;
         input {
           border: none;
           border-bottom: 1px solid $white;
           padding: 10px 0;
           outline: none;
-          width: 80%;
+          width: 73%;
           background: transparent;
+          margin-top: 63px;
+        }
+        button {
+          padding: 0 15px;
+          @include font($jt, 16px, $white, 600);
+          margin-left: 30px;
         }
       }
       .submit-cta {
-        padding: 85px 40px;
+        padding: 56px 47px 0 92px;
+        text-transform: uppercase;
         a {
-          padding: 8px 20px;
-          min-width: 280px;
+          margin-top: 51px;
+          padding: 15px 20px;
+          min-width: 362px;
         }
       }
     }

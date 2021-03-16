@@ -9,9 +9,12 @@ const internals = {
   addSlick(){
     this.$this.find('.slider').slick({
       rows: 0,
+      slidesToShow: 3,
+      slidesToScroll: 1,
       adaptiveHeight: true,
-      prevArrow: '<button type="button" class="slick-prev arrows"><span class="icomoon h1 icon-chevron-left"></span></button>',
-      nextArrow: '<button type="button" class="slick-next arrows"><span class="icomoon h1 icon-chevron-right"></span></button>'
+      prevArrow: '<button class="rounded-circle icomoon icon-arrow-thin-left"></button>',
+      nextArrow: '<button class="rounded-circle icomoon icon-arrow-thin-right"></button>',
+      centerPadding :'50px',
     })
   }
 }
@@ -22,3 +25,4 @@ const SliderDemo = (() => {
   }
 })()
 export default SliderDemo
+
