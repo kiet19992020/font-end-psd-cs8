@@ -3,13 +3,11 @@
     padding: 55px 20px 50px;
     .design-content {
       .design-text {
-        padding: 8px 16px
-
+        padding: 8px 16px;
       }
       h6 {
-        @include font($jt,20px,#205192);
+        @include font($jt,20px,$black,600);
         line-height: 1.1;
-
       }
     }
     .desgin-slide {
@@ -26,6 +24,9 @@
         padding: 39px 3px;
         letter-spacing: 10px;
       }
+    }
+    .ds-text-items {
+      padding-right: 100px;
     }
   }
 }
