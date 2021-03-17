@@ -34,7 +34,6 @@ const internals = {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
-            variableWidth: true,
             adaptiveHeight: true
           }
         },
@@ -42,7 +41,6 @@ const internals = {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            variableWidth: true,
             slidesToScroll: 1
           }
         }

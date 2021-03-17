@@ -64,14 +64,13 @@
 
 
 // .slick-slider {
-//   margin:0 -15px;
+//   margin:0 -15px ;
 // }
-// .slick-slide {
-//   padding:10px;
-//   text-align:center;
-//   margin-right:15px;
-//   margin-left:15px;
-// }
+.slick-slide {
+  // padding:10px;
+  margin-right:15px;
+  // margin-left:15px;
+}
 
 @include media-breakpoint-up(lg) {
   .mod-slider {
@@ -90,7 +89,6 @@
       left: 68px;
       img {
         max-width: 282px;
-        height: 252px;
       }
     }
     .container {

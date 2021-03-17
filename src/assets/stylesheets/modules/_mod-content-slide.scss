@@ -12,6 +12,7 @@
     padding: 50px 0;
     .slide-title {
       padding: 0 5px;
+      margin-left: 26px;
       h5 {
         @include font($jt, 18px, $darkblue);
         line-height: 1.17;

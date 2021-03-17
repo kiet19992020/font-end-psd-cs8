@@ -35,9 +35,15 @@
     .ab-slide-btn {
       img {
         padding-top: 25px;
-        margin-left: 20px;
+        margin-left: 26px;
 
         max-width: 35px;
+      }
+      p {
+        margin: 32px 18px;
+      }
+      a {
+        color: $darkblue;
       }
     }
     .about-info {
@@ -49,11 +55,6 @@
       }
       .ab-slide-info {
         padding: 56px 21px 14px 10px;
-      }
-      .ab-slide-btn {
-        p {
-          padding: 16px 0 23px;
-        }
       }
       .about-text {
         margin-left: 15px;
