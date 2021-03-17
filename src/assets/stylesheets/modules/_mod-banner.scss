@@ -2,8 +2,6 @@
 
 .mod-banner {
   top: auto;
-  max-width: 100%;
-
   position: relative;
   z-index: 5;
   &::after {
@@ -14,31 +12,21 @@
     right: 0;
     bottom: 0;
     left: 0;
-
-
-    height:100%;
-    // @include background-size(cover);
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    @include background-size(cover);
+    // background-repeat: no-repeat;
+    // background-position: left bottom;
+    // background-size: cover;
     z-index: 1;
     background-image: linear-gradient(to bottom, rgba(238, 238, 238, 0) 12%, #1e5091 107%);
   }
-  .container{
+  .container {
     z-index: 2;
     position: relative;
   }
-  .banner-content {
-    padding: 157px 45px 102px 0;
-  }
   .banner-text {
-
     margin: 48px 1px 46px 23px;
-  }
-  .title_banner {
-    img {
-      margin-left: -44px;
-    }
   }
 
 }
@@ -46,16 +34,17 @@
   .mod-banner {
     text-align: center;
     .banner-content {
-      padding: 205px 0 105px;
+      padding: 190px 0 105px;
       color: $black;
       p {
-        @include font($jt,16px,$black);
+        @include font($jt, 16px, $black);
         line-height: 1.31;
         letter-spacing: -.11px;
       }
     }
     .banner-text {
       padding: 0 8px;
+      margin: 48px 23px 46px 18px;
     }
     .btn-banner {
       display: flex;
@@ -63,7 +52,7 @@
       justify-content: center;
       align-items: center;
       input {
-        padding: 8px 20px;
+        padding: 10px 20px;
         min-width: 271px;
         margin: 41px 0;
         font-size: 14px;
@@ -74,9 +63,10 @@
     }
     .title_banner {
       img {
-        padding-bottom: 8px;
+        max-width: 285px;
+        height: auto;
+        width: 100%;
       }
     }
   }
-
 }

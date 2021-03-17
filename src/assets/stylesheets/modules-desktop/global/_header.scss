@@ -1,9 +1,10 @@
 @include media-breakpoint-up(lg) {
   .header {
-    padding: 25px 100px;
+    padding: 50px 4.5vw 50px 3.5vw;
     .navbar {
       max-width: 2000px;
-      padding: 0 15px;
     }
+  }
+  .header-mobile {
   }
 }

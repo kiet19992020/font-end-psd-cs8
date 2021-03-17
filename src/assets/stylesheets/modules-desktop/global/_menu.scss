@@ -4,14 +4,14 @@
     right: 0;
     position: absolute;
 
-    >li {
+    > li {
       font-size: em;
-
-      >a{
-        padding: 10px 15px;
+      > a {
         color: $blue;
         border-right: 1px solid $blue;
-
+        font-size: 15px;
+        font-weight: 500;
+        padding: 0 2.85vw;
       }
       &:hover {
         .main-menu-dropdown {
@@ -24,21 +24,21 @@
     //   position: static;
     // }
   }
-
-
 }
 
 @include media-breakpoint-up(xl) {
-  .main-menu-ul>li {
-    >a {
-      padding: 0 30px;
+  .main-menu-ul > li {
+    > a {
+      padding: 10px 2.85vw;
     }
     .btn {
-      padding: 5px 47px;
+      padding: 10px;
+      min-width: 199px;
       font-size: 16px;
     }
   }
   .main-menu-ul {
-    // padding: 3rem 0;
+    // padding-right: 3.5vw;
   }
 }
+
