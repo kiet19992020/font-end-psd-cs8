@@ -63,6 +63,10 @@
         }
       }
     }
+    .info-main-content {
+      position: relative;
+      transform: translateX(2vw);
+    }
     .card-body {
       h6 {
         padding-top: 40px;
