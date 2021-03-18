@@ -12,12 +12,10 @@
     .desgin-slide {
       .ds-slide-img {
         margin-top: -126px;
-        // height: 100%;
         margin-left: -31px;
       }
       img {
         max-width: 916px;
-        // height: 100%;
       }
       .slick-list {
         @include sizeEx(916px,100%);

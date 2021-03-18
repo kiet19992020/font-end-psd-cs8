@@ -12,51 +12,14 @@
       </div>
       <div class="icon-content text-white">
           <div class="row">
+            {% for itemsicon in itemsicon %}
             <div class="icon-item col-lg-4 col-6">
-              <img style="padding: 20px;" data-src="assets/images/feature-1.svg" alt="{{ title }}"
+              <img style="padding: 20px;" data-src="{{ itemsicon.url }}" alt="{{ title }}"
                   class="lazy img-svg" />
-              <h6>TOTAL CONTROL</h6>
-              <p>We’ll work with you to define your power usage
-                 effectiveness and water usage
-                  effectiveness according
-                 to your standards.</p>
+              <h6>{{ itemsicon.title }}</h6>
+              <p>{{ itemsicon.text}}</p>
             </div>
-            <div class="icon-item col-lg-4 col-6">
-              <img style="padding: 20px;" data-src="assets/images/feature-1.svg" alt="{{ title }}"
-                  class="lazy img-svg" />
-              <h6>DEDICATED PDUs</h6>
-              <p>All HyperSTACK designs include
-                private power distribution units
-                for maximum effectiveness.</p>
-            </div>
-            <div class="icon-item col-lg-4 col-6">
-              <img style="padding: 20px;" data-src="assets/images/feature-1.svg" alt="{{ title }}"
-                  class="lazy img-svg" />
-              <h6>24-HOUR FUEL STORAGE</h6>
-              <p>Maintain operability with fuel reserves to last most outages.</p>
-            </div>
-            <div class="icon-item col-lg-4 col-6">
-              <img style="padding: 20px;" data-src="assets/images/feature-1.svg" alt="{{ title }}"
-                  class="lazy img-svg" />
-              <h6>COOLING OPTIONS</h6>
-              <p>HyperSTACK designs come with air-cooled chillers,
-                 but water cooling is also available
-                 for higher density deployments.</p>
-            </div>
-            <div class="icon-item col-lg-4 col-6">
-              <img style="padding: 20px;" data-src="assets/images/feature-1.svg" alt="{{ title }}"
-                  class="lazy img-svg" />
-              <h6>BLOCK REDUNDANCY</h6>
-              <p>Power peace-of-mind for your UPS, MSB, and generators.</p>
-            </div>
-            <div class="icon-item col-lg-4 col-6">
-              <img style="padding: 20px;" data-src="assets/images/feature-1.svg" alt="{{ title }}"
-                  class="lazy img-svg" />
-              <h6>EFFICIENT CONSTRUCTION</h6>
-              <p>The HyperSTACK construction process has been architected from
-                 the supplier level all the way through delivery to
-                  be fast and more efficient.</p>
-            </div>
+            {% endfor %}
           </div>
       </div>
     </div>
