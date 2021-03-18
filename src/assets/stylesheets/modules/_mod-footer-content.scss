@@ -1,8 +1,6 @@
 // module 'Mod Footer Content'
 .mod-footer-content {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  @include background-size(cover);
   max-width: 100%;
   color: $white;
   background-image: url(../images/bk-CTA.png);

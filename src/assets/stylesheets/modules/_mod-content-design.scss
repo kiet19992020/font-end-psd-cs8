@@ -11,10 +11,6 @@
       }
     }
     .desgin-slide {
-      .dg-slide-btn {
-        padding: 30px 0;
-        letter-spacing: 10px;
-      }
       button {
         color: $blue;
       }
@@ -25,13 +21,7 @@
 @include media-breakpoint-down(lg) {
   .mod-content-design {
     padding: 60px 0;
-    .desgin-slide {
-      .dg-slide-btn {
-        padding: 30px 0;
-        letter-spacing: 10px;
-        text-align: center;
-      }
-    }
+
     .design-text {
       padding: 0;
       .design-text-title {
@@ -50,10 +40,11 @@
       .ds-slide-img {
         img {
           max-height: 234px;
+          width: 100%;
         }
       }
       .desgin-text-content {
-        padding: 0px 45px;
+        padding: 0 45px;
         h6 {
           @include font($jt, 16px, $black, 600);
           line-height: .05;
@@ -67,6 +58,12 @@
           padding: 11px 0;
         }
       }
+    }
+    .btn-design-left {
+      @include position(absolute,null,null,0,35%,5);
+    }
+    .btn-design-right {
+      @include position(relative,null,null,null,50%,null);
     }
   }
 }

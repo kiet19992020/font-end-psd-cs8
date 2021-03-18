@@ -8,8 +8,7 @@
           max-width: 568px;
         }
         hr {
-          width: 100px;
-          height: 1px;
+          @include sizeEx(100px,1px);
           border: none;
           background-color: $blue;
           margin: 30px 0;

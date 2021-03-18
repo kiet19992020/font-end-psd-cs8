@@ -1,11 +1,8 @@
 // module 'Mod Content Icon'
 .mod-content-icon {
   background-image: linear-gradient(164deg, #0a2035 45%, #1c467f 122%);
-
   position: relative;
   .icon-title {
-    color: $white;
-    text-align: center;
     hr {
       background-color: $blue;
       width: 100px;
@@ -15,7 +12,6 @@
     }
   }
   .icon-content {
-    color: $white;
     .icon-item {
       h6 {
         color: $blue;
@@ -28,8 +24,6 @@
     padding: 60px 20px;
     .icon-title {
       padding: 0 42px;
-      color: $white;
-      text-align: center;
       hr {
         background-color: $blue;
         width: 100px;
@@ -38,14 +32,14 @@
       }
       p {
         padding: 5px;
-        @include font($ssp, 16px, $white);
+        @include font($ssp, 16px,null,null);
         line-height: 1.35;
-        letter-spacing: -0.33px;
+        letter-spacing: -.33px;
       }
       h2 {
         @include font($jt, 28px, $white, 600);
         line-height: 1.25;
-        letter-spacing: 0.14px;
+        letter-spacing: .14px;
       }
     }
     .icon-content {

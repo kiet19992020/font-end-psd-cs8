@@ -2,11 +2,9 @@
 .mod-content-image {
   .content {
     .content-slide {
-      background-repeat: no-repeat;
-      background-position: bottom center;
-      background-size: cover;
+      @include background-size(cover);
       color: $white;
-      background-image: url(../images/HyperSTACK-buildingonly.jpg);
+      z-index: 3;
     }
     .content-text {
       padding: 30px 45px;
@@ -15,8 +13,7 @@
         max-width: 568px;
       }
       hr {
-        width: 100px;
-        height: 1px;
+        @include sizeEx(100px,1px);
         border: none;
         background-color: $blue;
         margin-left: 0;
@@ -32,19 +29,19 @@
       h3 {
         font-size: 28px;
         @include font($jt, 28px, $white, 600);
-        line-height: 0.4;
-        letter-spacing: 0.14px;
+        line-height: .4;
+        letter-spacing: .14px;
       }
     }
     .content-text {
       // padding: 30px 45px;
       .text-slide {
-        padding: 80px 0px;
+        padding: 80px 0;
         max-width: 568px;
         h5 {
           @include font($jt, 18px, $darkblue);
           line-height: 1.17;
-          letter-spacing: -0.12px;
+          letter-spacing: -.12px;
         }
         hr {
           margin: 19px 0;

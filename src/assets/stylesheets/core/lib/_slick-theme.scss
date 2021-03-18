@@ -35,9 +35,9 @@
   h6 {
     color: $white;
   }
-  padding: 20px;
-  width: 100%;
+
 }
+
 .slide-btn-left,
 .slide-btn-right {
   margin-top: 39px;
@@ -57,6 +57,7 @@
 }
 .slider-items {
   max-height: 381px;
+
   margin: 0px 10px;
   img {
     width: 100%;
@@ -77,7 +78,12 @@
     .container {
       max-width: 1846px;
     }
+    .img-content-text {
+      padding: 0 25px;
+      top: auto;
+    }
   }
+
 }
 
 @include media-breakpoint-down(lg) {
@@ -129,9 +135,13 @@
     left: 43px;
     color: $blue;
   }
-
+  .img-content-text {
+    padding: 0 20px;
+    top: auto;
+    max-width: 280px;
+  }
   .img-content {
-    right: 100px;
+
     h5 {
       font-size: 22px;
       line-height: 1.14;

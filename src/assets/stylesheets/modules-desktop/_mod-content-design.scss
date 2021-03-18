@@ -1,14 +1,13 @@
 @include media-breakpoint-up(lg) {
   .mod-content-design {
     padding: 55px 20px 50px;
-    .design-content {
-      .design-text {
-        padding: 8px 16px;
-      }
-      h6 {
-        @include font($jt,20px,$black,600);
-        line-height: 1.1;
-      }
+
+    .design-text {
+      padding: 8px 16px;
+    }
+    h6 {
+      @include font($jt, 20px, $black, 600);
+      line-height: 1.1;
     }
     .desgin-slide {
       .ds-slide-img {
@@ -20,6 +19,9 @@
         max-width: 916px;
         height: 100%;
       }
+      .slick-list {
+        @include sizeEx(916px,100%);
+      }
       .dg-slide-btn {
         padding: 39px 3px;
         letter-spacing: 10px;
@@ -27,6 +29,12 @@
     }
     .ds-text-items {
       padding-right: 100px;
+    }
+    .btn-design-left {
+      @include position(absolute,null,null,-10%,0,5);
+    }
+    .btn-design-right {
+      @include position(relative,null,null,-3%,10%,5);
     }
   }
 }

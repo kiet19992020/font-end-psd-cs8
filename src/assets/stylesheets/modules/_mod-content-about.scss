@@ -1,14 +1,6 @@
 // module 'Mod Content About'
 .mod-content-about {
   padding: 100px 0;
-
-  .about-note {
-    border: 2px solid $darkblue;
-    .about-note-text {
-      padding: 0;
-    }
-  }
-
   .about-info {
     .about-tile {
       hr {
@@ -19,33 +11,10 @@
   }
 }
 @include media-breakpoint-down(lg) {
-  .about-note {
-    margin: 0 41px;
-    padding: 76px 30px;
-    .about-note-text {
-      #img-top {
-        position: absolute;
-        top: -100px;
-        right: 40%;
-      }
-      #img-bottom {
-        position: absolute;
-        bottom: -120px;
-        right: 40%;
-      }
-      h4 {
-        @include font($jt, 22px, $darkblue, 600);
-        line-height: 1.45;
-        letter-spacing: .46px;
-      }
-    }
-  }
   .img-about {
-    background-image: url(../images/POR03-Option-1_Birds-Eye-768x412.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 157px;
     width: 100%;
+    z-index: 2;
   }
   .about-info {
     .about-tile {
@@ -60,7 +29,6 @@
       }
     }
   }
-
   .about-slide {
     margin: 0 15px;
     box-shadow: 0 0 10px 5px #52a3e670;
