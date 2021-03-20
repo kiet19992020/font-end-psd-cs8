@@ -32,16 +32,18 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5  about-text ">
+        <div class="col-lg-5 about-text ">
           <div class="row ">
             {% for item in [1,2,3,4] %}
             {% set even = (loop.index >= 3) %}
-            <div class="col-lg-6 {{ 'pt-lg-4'if even}}">
-              <div class="card bg-primary ">
+            <div class="col-lg-6 {{ 'pt-lg-4 text-dark'if even else 'text-white'}}">
+              <div class="card {{ 'bg-primary'if even else 'bg-info'}} ">
                 <div class="card-body ">
                   <h6>Case Study Headline</h6>
                   <p>
-                    <a href="#" class="text-decoration-none px-3 border-left border-white button-secondary-link">READ NOW</a>
+                    <a href="#"
+                    class="text-decoration-none px-3 {{ 'button-secondary-dark 'if even else 'button-secondary-link'}} ">
+                      READ NOW</a>
                   </p>
                 </div>
               </div>

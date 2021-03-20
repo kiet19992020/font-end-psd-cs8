@@ -44,7 +44,9 @@
 .bg-black {
   background-color: $black;
 }
-
+.bg-info {
+  background-color: $info;
+}
 .bg-bottom-center {
   background-position: bottom center;
 }
@@ -85,6 +87,9 @@
 
 .text-white {
   @extend %color-white;
+}
+.text-dark {
+  color: $black;
 }
 
 .ps-as {
