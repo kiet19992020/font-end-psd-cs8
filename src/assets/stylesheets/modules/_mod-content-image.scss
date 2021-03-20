@@ -1,58 +1,49 @@
 // module 'Mod Content Image'
-.mod-content-image {
-  .content {
-    .content-slide {
-      @include background-size(cover);
-      color: $white;
-      z-index: 3;
-    }
-    .content-text {
-      padding: 30px 45px;
-      .text-slide {
-        padding: 80px 0;
-        max-width: 568px;
-      }
-      hr {
-        @include sizeEx(100px,1px);
-        border: none;
-        background-color: $blue;
-        margin-left: 0;
-      }
-    }
+.content-slide {
+  @include background-size(cover);
+  color: $white;
+  z-index: 3;
+}
+.content-text {
+  padding: 30px 45px;
+  hr {
+    @include sizeEx(100px,1px);
+    border: none;
+    background-color: $blue;
+    margin-left: 0;
   }
 }
+.text-slide {
+  padding: 80px 0;
+  max-width: 568px;
+}
 @include media-breakpoint-down(lg) {
-  .content {
-    .content-slide {
-      min-height: 214px;
-      h2,
-      h3 {
-        font-size: 28px;
-        @include font($jt, 28px, $white, 600);
-        line-height: .4;
-        letter-spacing: .14px;
-      }
+  .content-slide {
+    min-height: 214px;
+    h2,
+    h3 {
+      font-size: 28px;
+      @include font($jt, 28px, $white, 600);
+      line-height: .4;
+      letter-spacing: .14px;
     }
-    .content-text {
-      // padding: 30px 45px;
-      .text-slide {
-        padding: 80px 0;
-        max-width: 568px;
-        h5 {
-          @include font($jt, 18px, $darkblue);
-          line-height: 1.17;
-          letter-spacing: -.12px;
-        }
-        hr {
-          margin: 19px 0;
-        }
-        p {
-          @include font($jt, 16px, $darkblue);
-          line-height: 1.31;
-          letter-spacing: -.11px;
-          padding: 5px 0;
-        }
-      }
+  }
+  .text-slide {
+    padding: 80px 0;
+    max-width: 568px;
+    h5 {
+      @include font($jt, 18px, $darkblue);
+      line-height: 1.17;
+      letter-spacing: -.12px;
+    }
+    hr {
+      margin: 19px 0;
+    }
+    p {
+      @include font($jt, 16px, $darkblue);
+      line-height: 1.31;
+      letter-spacing: -.11px;
+      padding: 5px 0;
     }
   }
 }

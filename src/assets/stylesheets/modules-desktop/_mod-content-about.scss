@@ -1,53 +1,54 @@
 @include media-breakpoint-up(lg) {
   .mod-content-about {
     padding: 100px 0;
-    .img-about {
-      max-width: 312px;
-      width: 100%;
-      min-height: 378px;
+  }
+  .img-about {
+    max-width: 312px;
+    width: 100%;
+    min-height: 378px;
+  }
+  .about-slide {
+    box-shadow: -1px 1px 24px 9px rgba(28, 155, 214, .16);
+  }
+  .ab-slide-btn {
+    img {
+      padding-top: 25px;
+      margin-left: 26px;
+      max-width: 35px;
     }
-    .about-slide {
-      box-shadow: 0 0 5px 1px $gray-100;
+    p {
+      margin: 32px 18px;
     }
-    .ab-slide-btn {
-      img {
-        padding-top: 25px;
-        margin-left: 26px;
-        max-width: 35px;
-      }
-      p {
-        margin: 32px 18px;
-      }
-      a {
-        color: $darkblue;
-      }
+    a {
+      color: $darkblue;
     }
-    .about-info {
-      .container {
-        max-width: 1320px;
-      }
-      .ab-slide-info {
-        padding: 56px 21px 22px 10px;
-      }
-      .about-text {
-        margin-left: 15px;
-        .card {
-          padding: 0 25px 1px;
-          margin-top: 20px;
-        }
-      }
+  }
+  .about-info {
+    .container {
+      max-width: 1320px;
     }
-    .info-main-content {
-      position: relative;
-      transform: translateX(2vw);
+  }
+  .ab-slide-info {
+    padding: 56px 21px 30px 10px;
+  }
+  .about-text {
+    margin-left: 15px;
+  }
+  .card {
+    padding: 0 10px 10px;
+    // margin-top: 20px;
+  }
+  .info-main-content {
+    position: relative;
+    transform: translateX(2vw);
+  }
+  .card-body {
+    h6 {
+      padding-top: 40px;
+      font-weight: 600;
     }
-    .card-body {
-      h6 {
-        padding-top: 40px;
-      }
-      p {
-        padding-top: 40px;
-      }
+    p {
+      padding-top: 40px;
     }
   }
 }

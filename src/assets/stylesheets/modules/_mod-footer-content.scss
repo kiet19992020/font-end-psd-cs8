@@ -4,83 +4,81 @@
   max-width: 100%;
   color: $white;
   background-image: url(../images/bk-CTA.png);
-  .content-cta {
-    .sign-up-cta {
-      input {
-        border: none;
-        border-bottom: 1px solid $white;
-        padding: 10px 0;
-        outline: none;
-        background: transparent;
-      }
-      ::placeholder {
-        color: $white;
-      }
-      button {
-        color: $white;
-        background: transparent;
-        border: none;
-        border-left: 1px solid $white;
-      }
-    }
+}
+.sign-up-cta {
+  input {
+    border: none;
+    border-bottom: 1px solid $white;
+    padding: 10px 0;
+    outline: none;
+    background: transparent;
+  }
+  ::placeholder {
+    color: $white;
+  }
+  button {
+    color: $white;
+    background: transparent;
+    border: none;
+    border-left: 1px solid $white;
   }
 }
 
 @include media-breakpoint-down(lg) {
   .mod-footer-content {
     padding: 63px 11px 0 0;
-    .sign-up-cta {
-      padding: 0 35px;
-    }
-    .submit-cta {
-      padding-left: 32px;
-      padding-right: 37px;
-      h4 {
-        text-transform: uppercase;
+  }
+  .sign-up-cta {
+    padding: 0 35px;
+  }
+  .submit-cta {
+    padding-left: 32px;
+    padding-right: 37px;
+    h4 {
+      text-transform: uppercase;
 
+    }
+    a {
+      margin-top: 6px;
+      padding: 12px 0;
+      min-width: 294px;
+      width: 100%;
+      @include font($jt, 14px, $white, 600);
+    }
+  }
+  .content-cta {
+    h4 {
+      @include font($jt, 22px, $white, 300);
+      line-height: 1.14;
+      letter-spacing: .61px;
+    }
+    // padding: 156px;
+    .sign-cta-mb {
+      margin-top: 30px;
+      min-width: 280px;
+      input {
+        width: 100%;
+        margin-bottom: 30px;
+        line-height: 1.5;
+        letter-spacing: .16px;
       }
       a {
-        margin-top: 6px;
         padding: 12px 0;
         min-width: 294px;
         width: 100%;
         @include font($jt, 14px, $white, 600);
       }
     }
-    .content-cta {
-      h4 {
-        @include font($jt, 22px, $white, 300);
-        line-height: 1.14;
-        letter-spacing: .61px;
-      }
-      // padding: 156px;
-      .sign-cta-mb {
-        margin-top: 30px;
-        min-width: 280px;
-        input {
-          width: 100%;
-          margin-bottom: 30px;
-          line-height: 1.5;
-          letter-spacing: .16px;
-        }
-        a {
-          padding: 12px 0;
-          min-width: 294px;
-          width: 100%;
-          @include font($jt, 14px, $white, 600);
-        }
-      }
-      ::placeholder {
-        @include font($jt, 13px, $white);
-        line-height: 3;
-        letter-spacing: .16px;
-      }
-      hr {
-        margin: 50px auto;
-        background-color: $white;
-        width: 90%;
-        text-align: center;
-      }
+    ::placeholder {
+      @include font($jt, 13px, $white);
+      line-height: 3;
+      letter-spacing: .16px;
+    }
+    hr {
+      margin: 50px auto;
+      background-color: $white;
+      width: 90%;
+      text-align: center;
     }
   }
 }

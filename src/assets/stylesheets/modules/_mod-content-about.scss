@@ -16,59 +16,58 @@
     width: 100%;
     z-index: 2;
   }
-  .about-info {
-    .about-tile {
-      h5 {
-        @include font($jt, 18px, $darkblue);
-        line-height: 1.17;
-        letter-spacing: -.12px;
-        padding-right: 50px;
-      }
-      hr {
-        margin-left: 0;
-      }
+  .about-tile {
+    h5 {
+      @include font($jt, 18px, $darkblue);
+      line-height: 1.17;
+      letter-spacing: -.12px;
+      padding-right: 50px;
+    }
+    hr {
+      margin-left: 0;
     }
   }
   .about-slide {
     margin: 0 15px;
     box-shadow: 0 0 10px 5px #52a3e670;
 
-    .ab-slide-info {
-      padding-top: 25px;
-      h4 {
-        @include font($jt, 22px, $darkblue, 600);
-        line-height: 1.09;
-        letter-spacing: -.1px;
-      }
-      p {
-        @include font($ssp, 16px, $darkblue);
-        line-height: 1.44;
-        letter-spacing: -.11px;
-      }
+
+  }
+  .ab-slide-info {
+    padding-top: 25px;
+    h4 {
+      @include font($jt, 22px, $darkblue, 600);
+      line-height: 1.09;
+      letter-spacing: -.1px;
     }
-    .ab-slide-btn {
-      a {
-        color: $blue;
-      }
-      img {
-        margin-top: 10px;
-        max-width: 35px;
-      }
+    p {
+      @include font($ssp, 16px, $darkblue);
+      line-height: 1.44;
+      letter-spacing: -.11px;
+    }
+  }
+  .ab-slide-btn {
+    a {
+      color: $blue;
+    }
+    img {
+      margin-top: 10px;
+      max-width: 35px;
     }
   }
   .card {
     padding: 28px 0 0;
     margin-top: 22px;
     margin-right: 12px;
-    .card-body {
-      padding: 5px 20px;
-      h6 {
-        @include font($jt, 18px,$white);
-        margin-bottom: 40px;
-      }
-      a {
-        @include font($jt,14px,$white);
-      }
+  }
+  .card-body {
+    padding: 5px 20px;
+    h6 {
+      @include font($jt, 18px,$white);
+      margin-bottom: 40px;
+    }
+    a {
+      @include font($jt,14px,$white);
     }
   }
 }

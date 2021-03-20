@@ -1,34 +1,18 @@
 .btn {
-
   display: inline-block;
   font-weight: $btn-font-weight;
   text-align: center;
   vertical-align: middle;
   user-select: none;
-  letter-spacing: .19px;
+  letter-spacing: 0.19px;
   border: $btn-border-width solid transparent;
   padding: .375rem .75rem;
-}
-
-
-///primary
-.btn-primary {
-  color: $white;
-  background-color: $blue;
-  border-color: $blue;
-  &:hover,
-  &:focus {
-    color: $white;
-    background-color: darken($blue, 7.5%);
-    border-color: darken($blue, 7.5%);
-  }
 }
 
 .btn-outline-primary {
   color: $blue;
   border-color: $blue;
-  background-color: Transparent;
-  background-repeat: no-repeat;
+  background-color: transparent;
   &:hover,
   &:focus {
     color: $white;
@@ -36,17 +20,15 @@
     border-color: $blue;
   }
 }
-
-////dark
-.btn-dark {
+.btn-primary {
   color: $white;
-  background-color: $black;
-  border-color: $black;
+  background-color: $blue;
+  border-color: $blue;
   &:hover,
   &:focus {
-    color: $white;
-    background-color: darken($blue, 7.5%);
-    border-color: darken($blue, 7.5%);
+    color: $blue;
+    background-color: $white;
+    border-color: $white;
   }
 }
 
@@ -64,19 +46,6 @@
   }
 }
 
-///link
-.btn-link {
-  color: $darkblue;
-  background-color: $white;
-  border-color: $darkblue;
-  &:hover,
-  &:focus {
-    color: $white;
-    background-color: darken($blue, 7.5%);
-    border-color: darken($blue, 7.5%);
-  }
-}
-
 .btn-outline-link {
   color: $white;
   border-color: $white;
@@ -84,63 +53,36 @@
 
   &:hover,
   &:focus {
-    color: $white;
-    background-color: $darkblue;
-    border-color: $darkblue;
-  }
-}
-///info
-
-.btn-info {
-  color: $darkblue;
-  background-color: $info;
-  border-color: $info;
-  &:hover,
-  &:focus {
-    color: $white;
-    background-color: darken($blue, 7.5%);
-    border-color: darken($blue, 7.5%);
+    color: $darkblue;
+    background-color: $white;
+    border-color: $white;
   }
 }
 
 .btn-outline-info {
-  color: $info;
-  border-color: $info;
-  background-color: $darkblue;
+  color: $blue;
+  border-color: $blue;
   background-color: Transparent;
-  background-repeat:no-repeat;
 
   &:hover,
   &:focus {
-    color: $white;
-    background-color: $darkblue;
+    color: $darkblue;
+    background-color: $info;
     border-color: $info;
   }
 }
 //darkblue
 
-.btn-darkblue {
-  color: $black;
-  background-color: $blue;
-  border-color: $blue;
-  &:hover,
-  &:focus {
-    color: $white;
-    background-color: darken($blue, 7.5%);
-    border-color: darken($blue, 7.5%);
-  }
-}
-
 .btn-outline-darkblue {
   color: $blue;
   border-color: $blue;
-  background-color: $black;
+  background-color: transparent;
 
   &:hover,
   &:focus {
-    color: $white;
-    background-color: $darkblue;
-    border-color: $info;
+    color: $dark0a;
+    background-color: $blue;
+    border-color: $blue;
   }
 }
 
@@ -149,7 +91,7 @@
   width: 100%;
 
   // Vertically space out multiple block buttons
-  +.btn-block {
+  + .btn-block {
     margin-top: $btn-block-spacing-y;
   }
 }
@@ -160,39 +102,56 @@
   }
 }
 
-
 //btn boder_left
 
-.button-secondary {
-  @include sizeEx(188px,58px);
-
-  @include font($jt,16px,$blue,600,normal);
-  font-stretch: normal;
-  line-height: 2.44;
+.button-secondary-info {
+  @include font($jt,1rem, $blue, 600);
+  line-height: 1.4;
   letter-spacing: .19px;
+  border-left: 1px solid $info;
+  &:focus,
+  &:hover {
+    border-left: 1px solid $darkblue;
+  }
 }
 .button-secondary-dark {
-  @include sizeEx(188px,58px);
-
-  @include font($jt,16px,$black,600,normal);
-  font-stretch: normal;
-  line-height: 2.44;
+  @include font($jt,1rem, $black, 600);
+  line-height: 1.4;
   letter-spacing: .19px;
+  border-left: 1px solid $black;
+  &:focus,
+  &:hover {
+    border-left: 1px solid $blue;
+    color: $blue;
+  }
 }
 .button-secondary-link {
-  @include sizeEx(188px,58px);
-
-  @include font($jt,16px,$white,600,normal);
-  font-stretch: normal;
-  line-height: 2.44;
+  @include font($jt,1rem, $white, 600);
+  line-height: 1.4;
   letter-spacing: .19px;
+  border-left: 1px solid $white;
+  &:focus,
+  &:hover {
+    color: $blue;
+    border-left: 1px solid $blue;
+  }
 }
 
+.button-secondary-primary {
+  @include font($jt,1rem, $blue, 600);
+  line-height: 1.4;
+  letter-spacing: .19px;
+  border-left: 1px solid $blue;
+  &:focus,
+  &:hover {
+    color: $white;
+    border-left: 1px solid $white;
+  }
+}
 
 //buton rounded-circle
 
 .rounded-circle {
-
   @include sizeEx(39px);
   border-radius: 50%;
   border: 1px solid;
@@ -206,4 +165,3 @@
 
   background-color: transparent;
 }
-

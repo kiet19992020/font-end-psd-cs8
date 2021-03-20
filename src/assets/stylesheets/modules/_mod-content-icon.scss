@@ -2,57 +2,57 @@
 .mod-content-icon {
   background-image: linear-gradient(164deg, #0a2035 45%, #1c467f 122%);
   position: relative;
-  .icon-title {
-    hr {
-      background-color: $blue;
-      width: 100px;
-    }
-    p {
-      padding: 30px 20px;
-    }
+}
+.icon-title {
+  hr {
+    background-color: $blue;
+    width: 100px;
   }
-  .icon-content {
-    .icon-item {
-      h6 {
-        color: $blue;
-      }
+  p {
+    padding: 30px 20px;
+  }
+}
+.icon-content {
+  .icon-item {
+    h6 {
+      color: $blue;
     }
   }
 }
 @include media-breakpoint-down(lg) {
   .mod-content-icon {
     padding: 60px 20px;
-    .icon-title {
-      padding: 0 42px;
-      hr {
-        background-color: $blue;
-        width: 100px;
-        margin-top: 25px;
-        margin-bottom: 25px;
+  }
+  .icon-title {
+    padding: 0 42px;
+    hr {
+      background-color: $blue;
+      width: 100px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    p {
+      padding: 5px;
+      @include font($ssp, 16px,null,null);
+      line-height: 1.35;
+      letter-spacing: -.33px;
+    }
+    h2 {
+      @include font($jt, 28px, $white, 600);
+      line-height: 1.25;
+      letter-spacing: .14px;
+    }
+  }
+  .icon-content {
+    .icon-item {
+      h6 {
+        @include font($jt, 16px, $blue, 600);
+        line-height: 1.06;
       }
       p {
-        padding: 5px;
-        @include font($ssp, 16px,null,null);
-        line-height: 1.35;
-        letter-spacing: -.33px;
-      }
-      h2 {
-        @include font($jt, 28px, $white, 600);
-        line-height: 1.25;
-        letter-spacing: .14px;
-      }
-    }
-    .icon-content {
-      .icon-item {
-        h6 {
-          @include font($jt, 16px, $blue, 600);
-          line-height: 1.06;
-        }
-        p {
-          @include font($ssp, 14px, $white);
-          line-height: 1.29;
-          letter-spacing: -.09px;
-        }
+        @include font($ssp, 14px, $white);
+        line-height: 1.29;
+        letter-spacing: -.09px;
       }
     }
   }

@@ -1,10 +1,10 @@
 // module 'Mod Content Slide'
 .mod-content-slide {
   padding: 50px 0;
-  .slide-title {
-    padding: 0 5px;
-    width: 75%;
-  }
+}
+.slide-title {
+  padding: 0 5px;
+  width: 75%;
 }
 
 @include media-breakpoint-down(lg) {

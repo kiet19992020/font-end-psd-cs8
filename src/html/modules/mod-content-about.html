@@ -1,6 +1,5 @@
 <!-- module 'Mod Content About' -->
 <section class="module mod-content-about">
-
   <div class="about-info">
     <div class="container">
       <div class="about-tile text-center">
@@ -36,7 +35,8 @@
         <div class="col-lg-5  about-text ">
           <div class="row ">
             {% for item in [1,2,3,4] %}
-            <div class="col-lg-6">
+            {% set even = (loop.index >= 3) %}
+            <div class="col-lg-6 {{ 'pt-lg-4'if even}}">
               <div class="card bg-primary ">
                 <div class="card-body ">
                   <h6>Case Study Headline</h6>

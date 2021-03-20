@@ -1,38 +1,38 @@
 @include media-breakpoint-up(lg) {
   .mod-content-design {
     padding: 55px 20px 50px;
-
-    .design-text {
-      padding: 8px 16px;
-    }
     h6 {
-      @include font($jt, 20px, $black, 600);
+      @include font(null, 1.25rem, $black, 600);
       line-height: 1.1;
     }
-    .desgin-slide {
-      .ds-slide-img {
-        margin-top: -126px;
-        margin-left: -31px;
-      }
-      img {
-        max-width: 916px;
-      }
-      .slick-list {
-        @include sizeEx(916px,100%);
-      }
-      .dg-slide-btn {
-        padding: 39px 3px;
-        letter-spacing: 10px;
-      }
+  }
+  .btn-design-left {
+    @include position(absolute,null,null,0,0,5);
+  }
+  .btn-design-right {
+    @include position(relative,null,null,0,10%,5);
+  }
+  .ds-text-items {
+    padding-right: 100px;
+  }
+  .design-text {
+    padding: 8px 16px;
+  }
+  .desgin-slide {
+    img {
+      max-width: 916px;
     }
-    .ds-text-items {
-      padding-right: 100px;
+    .slick-list {
+      @include sizeEx(916px,100%);
     }
-    .btn-design-left {
-      @include position(absolute,null,null,0,0,5);
-    }
-    .btn-design-right {
-      @include position(relative,null,null,0,10%,5);
-    }
+
+  }
+  .dg-slide-btn {
+    padding: 39px 3px;
+    letter-spacing: 10px;
+  }
+  .ds-slide-img {
+    margin-top: -126px;
+    margin-left: -31px;
   }
 }

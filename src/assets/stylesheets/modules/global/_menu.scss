@@ -34,17 +34,6 @@
   .nav-item-arrows {
     top: -5px;
   }
-
-  ul {
-    li {
-      color: $gray-900;
-    }
-
-    a {
-      // padding: 10px 15px;
-    }
-  }
-
   li {
     font-size: .85em;
   }
@@ -73,8 +62,7 @@
 
   .icon-bar {
     display: block;
-    width: 34px;
-    height: 3px;
+    @include sizeEx(34px,3px);
     background: $blue;
     position: relative;
     margin-left: auto;
@@ -109,7 +97,6 @@
 }
 
 @include media-breakpoint-down(lg) {
-
   .is-open-child {
     .main-menu-dropdown {
       display: block;
@@ -126,7 +113,7 @@
     visibility: hidden;
     overflow: hidden;
     transition: .2s;
-    padding: 0 40px;
+    padding: 0 25px;
     .menu-search {
       input {
         padding: 6px 10px;
@@ -159,9 +146,7 @@
     li {
       color: white;
     }
-    // .menu-btn {
-    //   margin-top: -10px;
-    // }
+
     .menu-login {
 
       .btn-outline-info {
@@ -181,7 +166,7 @@
         font-size: 1.3em;
         text-transform: uppercase;
         > a:not(.btn) {
-          padding: 5px 0;
+          padding: 15px 0;
           border-bottom: 1px solid $blue;
         }
       }
@@ -193,6 +178,7 @@
       visibility: visible;
       overflow: hidden;
       transition: .5s;
+      margin-top: 30px;
     }
   }
 }

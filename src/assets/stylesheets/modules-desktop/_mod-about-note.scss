@@ -1,26 +1,24 @@
 @include media-breakpoint-up(lg) {
-  .mod-about-note {
-    .about-note-text {
-      padding: 125px 50px 125px 100px;
-      width: 100%;
-      #img-top {
-        @include position(absolute,-10%,45%,null,null);
-      }
-      h4 {
-        @include font($jt, 28px, #1e5091, 600);
-      }
-      #img-bottom {
-        @include position(absolute,null,45%,-30px,null);
-      }
+  .about-note-text {
+    padding: 125px 50px 125px 100px;
+    width: 100%;
+    #img-top {
+      @include position(absolute,-10%,45%,null,null);
     }
-    .about-note {
-      position: relative;
-      &::before {
-        content: '';
-        @include position(absolute,0,0,0,null);
-        width: 100vw;
-        border: 2px solid $darkblue;
-      }
+    h4 {
+      @include font($jt, 28px, #1e5091, 600);
+    }
+    #img-bottom {
+      @include position(absolute,null,45%,-30px,null);
+    }
+  }
+  .about-note {
+    position: relative;
+    &::before {
+      content: '';
+      @include position(absolute,0,0,0,null);
+      width: 100vw;
+      border: 2px solid $darkblue;
     }
   }
 }

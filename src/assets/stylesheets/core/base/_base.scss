@@ -68,9 +68,6 @@ strong {
 }
 a {
   transition: .25s all;
-
-  @include font($jt,16px,$blue, 500, normal);
-
   &:hover {
     transition: .25s all;
   }
@@ -87,18 +84,21 @@ h2 {
   font-weight: 300;
   line-height: 1.08;
   letter-spacing: 1px;
+  color: $blue-1e;
 }
 .h3,
 h3 {
   font-family: $ssp;
   line-height: 1.38;
   letter-spacing: .31px;
+  color: $blue-1e;
 }
 .h4,
 h4 {
   font-weight: 600;
   line-height: 1.32;
   letter-spacing: .14px;
+  color: $blue-1e;
 }
 .h5,
 h5 {

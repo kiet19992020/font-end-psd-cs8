@@ -5,11 +5,10 @@
     position: absolute;
 
     > li {
-      font-size: em;
       > a {
         color: $blue;
         border-right: 1px solid $blue;
-        font-size: 15px;
+        font-size: .9375rem;
         font-weight: 500;
         padding: 0 2.85vw;
       }

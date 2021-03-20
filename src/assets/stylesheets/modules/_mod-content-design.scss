@@ -2,68 +2,67 @@
 .mod-content-design {
   margin-top: 100px;
   background-color: #e4f3fa;
-  .design-content {
-    .design-text {
-      hr {
-        width: 100px;
-        margin: 25px 0;
-        background-color: $blue;
-      }
+
+}
+.design-content {
+  .design-text {
+    hr {
+      width: 100px;
+      margin: 25px 0;
+      background-color: $blue;
     }
-    .desgin-slide {
-      button {
-        color: $blue;
-      }
+  }
+  .desgin-slide {
+    button {
+      color: $blue;
     }
   }
 }
-
 @include media-breakpoint-down(lg) {
   .mod-content-design {
     padding: 60px 0;
-
-    .design-text {
-      padding: 0;
-      .design-text-title {
-        padding: 0 46px;
-        h5,
-        h6 {
-          @include font($jt, 18px, $darkblue);
-          line-height: 1.17;
-          letter-spacing: -.12px;
-        }
-        hr {
-          margin-bottom: 20px;
-          margin-top: 0;
-        }
-      }
-      .ds-slide-img {
-        img {
-          max-height: 234px;
-          width: 100%;
-        }
-      }
-      .desgin-text-content {
-        padding: 0 45px;
-        h6 {
-          @include font($jt, 16px, $black, 600);
-          line-height: .05;
-        }
-        p {
-          @include font($ssp, 16px, $darkblue);
-          line-height: 1.31;
-          letter-spacing: -.11px;
-        }
-        .ds-text-items {
-          padding: 11px 0;
-        }
-      }
+  }
+  .design-text {
+    padding: 0;
+  }
+  .design-text-title {
+    padding: 0 46px;
+    h5,
+    h6 {
+      @include font($jt, 18px, $darkblue);
+      line-height: 1.17;
+      letter-spacing: -.12px;
     }
-    .btn-design-left {
-      @include position(absolute,null,null,0,35%,5);
+    hr {
+      margin-bottom: 20px;
+      margin-top: 0;
     }
-    .btn-design-right {
-      @include position(relative,null,null,null,50%,null);
+  }
+  .ds-slide-img {
+    img {
+      max-height: 234px;
+      width: 100%;
     }
+  }
+  .desgin-text-content {
+    padding: 0 45px;
+    h6 {
+      @include font($jt, 16px, $black, 600);
+      line-height: .05;
+    }
+    p {
+      @include font($ssp, 16px, $darkblue);
+      line-height: 1.31;
+      letter-spacing: -.11px;
+    }
+    .ds-text-items {
+      padding: 11px 0;
+    }
+  }
+  .btn-design-left {
+    @include position(absolute,null,null,0,35%,5);
+  }
+  .btn-design-right {
+    @include position(relative,null,null,null,50%,null);
   }
 }
