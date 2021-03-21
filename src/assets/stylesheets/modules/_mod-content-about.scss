@@ -12,8 +12,7 @@
 }
 @include media-breakpoint-down(lg) {
   .img-about {
-    height: 157px;
-    width: 100%;
+    @include sizeEx(100%,157px);
     z-index: 2;
   }
   .about-tile {

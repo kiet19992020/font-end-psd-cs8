@@ -13,7 +13,9 @@
             </p>
           </div>
         </div>
-        <img data-src="{{ slide.url }}" alt="{{ title }}" class="lazy img-svg" />
+        <!-- <img data-src="{{ slide.url }}" alt="{{ title }}" class="bg lazy img-svg" /> -->
+        <div class="bg slider-img bg-slide bg-desktop lazy  bg-center "
+        alt="{{ title }}"   data-src="{{ slide.url }}"></div>
       </div>
       {% endfor %}
     </div>

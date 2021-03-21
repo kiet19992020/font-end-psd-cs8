@@ -11,7 +11,7 @@
         <div class="col-lg-6 about-slide">
           <div class="row">
             <div class="col-lg-6 ps-rv img-about">
-                <div class="lazy bg ps-as" data-src="assets/images/POR03-Option-1_Birds-Eye-768x412.jpg"></div>
+              <div class="lazy bg ps-as" data-src="assets/images/POR03-Option-1_Birds-Eye-768x412.jpg"></div>
             </div>
             <div class="col-lg-6">
               <div class="ab-slide-info">
@@ -22,11 +22,12 @@
               <div class="row ab-slide-btn  border-top border-primary">
                 <div class="col-8 border-right  border-primary">
                   <p>
-                    <a href="#" class="text-decoration-none px-3 border-left border-dark button-secondary-dark">READ NOW</a>
+                    <a href="#" class="text-decoration-none px-3 border-left border-dark button-secondary-dark">READ
+                      NOW</a>
                   </p>
                 </div>
                 <div class="col-4">
-                  <img data-src="assets/images/whitepaper-icon.svg" alt="{{ title }}"  class="lazy img-svg" />
+                  <img data-src="assets/images/whitepaper-icon.svg" alt="{{ title }}" class="lazy img-svg" />
                 </div>
               </div>
             </div>
@@ -34,15 +35,16 @@
         </div>
         <div class="col-lg-5 about-text ">
           <div class="row ">
-            {% for item in [1,2,3,4] %}
+            {% for abouts in abouts %}
             {% set even = (loop.index >= 3) %}
-            <div class="col-lg-6 {{ 'pt-lg-4 text-dark'if even else 'text-white'}}">
-              <div class="card {{ 'bg-primary'if even else 'bg-info'}} ">
-                <div class="card-body ">
-                  <h6>Case Study Headline</h6>
+            {% set evet = (loop.index % 2 == 0) %}
+            <div class="col-lg-6 {{ 'pt-lg-4 text-dark'if even else 'text-white'}} {{ 'pl-lg-4 text-dark'if evet}} ">
+              <div class="card" style="background-color:{{ abouts.bg }};">
+                <div class="card-body">
+                  <h6>{{ abouts.title}}</h6>
                   <p>
                     <a href="#"
-                    class="text-decoration-none px-3 {{ 'button-secondary-dark 'if even else 'button-secondary-link'}} ">
+                      class="text-decoration-none px-3 {{ 'button-secondary-dark 'if even else 'button-secondary-link'}} ">
                       READ NOW</a>
                   </p>
                 </div>

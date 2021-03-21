@@ -65,9 +65,10 @@
   max-height: 381px;
 
   margin: 0px 10px;
-  img {
+  .slider-img {
     width: 100%;
     max-width: 426px;
+    min-height: 381px;
   }
   width: 100%;
 }
@@ -80,7 +81,7 @@
     position: relative;
     right: 0;
     margin: 0;
-    transform: translateX(15%);
+    transform: translateX(14.5%);
     .container {
       max-width: 1846px;
     }
@@ -95,9 +96,9 @@
 @include media-breakpoint-down(lg) {
   .slider {
     left: 43px;
-    img {
-      max-width: 282px;
-      height: 252px;
+    .slider-img {
+      // max-width: 282px;
+      // min-height: 252px;
       width: 100%;
     }
     &::before {

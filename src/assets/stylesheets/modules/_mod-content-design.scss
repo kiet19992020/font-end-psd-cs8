@@ -4,22 +4,20 @@
   background-color: #e4f3fa;
 
 }
-.design-content {
-  .design-text {
-    hr {
-      width: 100px;
-      margin: 25px 0;
-      background-color: $blue;
-    }
+.design-text {
+  hr {
+    width: 100px;
+    margin: 25px 0;
+    background-color: $blue;
   }
-  .desgin-slide {
-    .bg-slide {
-      padding-bottom: 61.34%;
-    }
-    button {
-      color: $blue;
-    }
+}
+.desgin-slide {
+  button {
+    color: $blue;
   }
+}
+.bg-slide {
+  padding-bottom: 62.34%;
 }
 @include media-breakpoint-down(lg) {
   .mod-content-design {
@@ -58,12 +56,19 @@
       line-height: 1.31;
       letter-spacing: -.11px;
     }
-    .ds-text-items {
-      padding: 11px 0;
-    }
   }
+  .ds-text-items {
+    padding: 11px 0;
+  }
+
+  .btn-design-left,
+  .btn-design-right {
+    @include sizeEx(33px);
+    margin-top: 20px;
+  }
+
   .btn-design-left {
-    @include position(absolute,null,null,0,35%,5);
+    @include position(absolute,null,null,0,40%,5);
   }
   .btn-design-right {
     @include position(relative,null,null,null,50%,null);

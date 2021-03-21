@@ -1,9 +1,6 @@
 @include media-breakpoint-up(lg) {
   .main-menu-ul {
-    top: 0;
-    right: 0;
-    position: absolute;
-
+    @include position(absolute,0,0,null,null,null);
     > li {
       > a {
         color: $blue;
@@ -33,11 +30,8 @@
     .btn {
       padding: 10px;
       min-width: 199px;
-      font-size: 16px;
+      font-size: 1.125rem;
     }
-  }
-  .main-menu-ul {
-    // padding-right: 3.5vw;
   }
 }
 

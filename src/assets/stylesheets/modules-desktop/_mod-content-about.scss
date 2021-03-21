@@ -35,8 +35,9 @@
     margin-left: 15px;
   }
   .card {
-    padding: 0 10px 10px;
-    // margin-top: 20px;
+    min-width: 258px;
+    min-height: 171px;
+    padding: 20px 29px 10px;
   }
   .info-main-content {
     position: relative;
@@ -44,11 +45,10 @@
   }
   .card-body {
     h6 {
-      padding-top: 40px;
       font-weight: 600;
     }
     p {
-      padding-top: 40px;
+      padding-top: 30px;
     }
   }
 }

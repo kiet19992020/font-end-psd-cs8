@@ -23,10 +23,6 @@
     padding: 8px 16px;
   }
   .desgin-slide {
-    .bg-slide {
-      max-width: 916px;
-      min-height: 571px;
-    }
     .slick-list {
       @include sizeEx(916px,100%);
     }

@@ -22,8 +22,7 @@
     min-height: 214px;
     h2,
     h3 {
-      font-size: 28px;
-      @include font($jt, 28px, $white, 600);
+      @include font($jt, 1.75rem, $white, 600);
       line-height: .4;
       letter-spacing: .14px;
     }
