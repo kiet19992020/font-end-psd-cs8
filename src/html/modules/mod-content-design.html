@@ -15,8 +15,10 @@
             <div class="ds-slide-img ps-rv slider-design">
               {% for item in [1,2,3] %}
               <div>
-                <img data-src="assets/images/Phoenix_0110-Two-Story-Option-2-Day.jpg" alt="{{ title }}"
-                class="lazy img-svg" />
+                <div>
+                  <div class="bg bg-slide bg-desktop lazy  bg-center "
+                    data-src="/assets/images/Phoenix_0110-Two-Story-Option-2-Day.jpg"></div>
+                </div>
               </div>
               {% endfor %}
             </div>
@@ -24,7 +26,7 @@
           <!-- hide--only--lg -->
           <div class="desgin-text-content bd-p2">
 
-            {% for contentds in  contentds %}
+            {% for contentds in contentds %}
             <div class="ds-text-items">
               <h6>{{ contentds.title }}</h6>
               <p>{{ contentds.text }} </p>
@@ -34,14 +36,14 @@
           </div>
         </div>
         <div class="col-lg-6 d-none  d-lg-block desgin-slide">
-            <div class="ds-slide-img ps-rv slider-design slider-lazy">
-              {% for item in [1,2,3] %}
-              <div>
-                <img data-src="assets/images/Phoenix_0110-Two-Story-Option-2-Day.jpg" alt="{{ title }}"
-                class="lazy img-svg" />
-              </div>
-              {% endfor %}
+          <div class="ds-slide-img ps-rv slider-design slider-lazy">
+            {% for item in [1,2,3] %}
+            <div>
+              <div class="bg bg-slide bg-desktop lazy  bg-center "
+                data-src="/assets/images/Phoenix_0110-Two-Story-Option-2-Day.jpg"></div>
             </div>
+            {% endfor %}
+          </div>
         </div>
       </div>
     </div>

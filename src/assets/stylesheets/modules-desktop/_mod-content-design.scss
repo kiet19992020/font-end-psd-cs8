@@ -6,6 +6,10 @@
       line-height: 1.1;
     }
   }
+  .btn-design-left,
+  .btn-design-right {
+    margin-top: 5%;
+  }
   .btn-design-left {
     @include position(absolute,null,null,0,0,5);
   }
@@ -19,8 +23,9 @@
     padding: 8px 16px;
   }
   .desgin-slide {
-    img {
+    .bg-slide {
       max-width: 916px;
+      min-height: 571px;
     }
     .slick-list {
       @include sizeEx(916px,100%);
