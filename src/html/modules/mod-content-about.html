@@ -38,8 +38,8 @@
             {% for abouts in abouts %}
             {% set even = (loop.index >= 3) %}
             {% set evet = (loop.index % 2 == 0) %}
-            <div class="col-lg-6 {{ 'pt-lg-4 text-dark'if even else 'text-white'}} {{ 'pl-lg-4 text-dark'if evet}} ">
-              <div class="card" style="background-color:{{ abouts.bg }};">
+            <div class="col-lg-6 {{ 'pt-lg-4 text-dark'if even else 'text-white'}} {{ 'pl-lg-4  text-dark'if evet}} ">
+              <div class="card" style="background-color:{{ abouts.bg }}">
                 <div class="card-body">
                   <h6>{{ abouts.title}}</h6>
                   <p>

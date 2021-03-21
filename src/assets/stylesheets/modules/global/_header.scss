@@ -27,14 +27,13 @@
     }
   }
   .header-mobile {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
     margin: -20px -17px;
     padding: 45px 4px 24px;
     background-color: $white;
-    // max-width: 100%;
+    img {
+      max-width: 127px;
+      width: 100%;
+    }
     button {
       padding: 17px 16px 0 0;
     }

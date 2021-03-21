@@ -1,13 +1,11 @@
 @include media-breakpoint-up(lg) {
   .main-menu-ul {
-    @include position(absolute,0,0,null,null,null);
+    @include position(absolute,5px,0,null,null,null);
     > li {
       > a {
-        color: $blue;
         border-right: 1px solid $blue;
-        font-size: .9375rem;
-        font-weight: 500;
-        padding: 0 2.85vw;
+        @include font($jt,.9375rem,$blue,500);
+        padding: 0 20px;
       }
       &:hover {
         .main-menu-dropdown {
@@ -15,17 +13,13 @@
         }
       }
     }
-
-    // .mega-dropdown {
-    //   position: static;
-    // }
   }
 }
 
 @include media-breakpoint-up(xl) {
   .main-menu-ul > li {
     > a {
-      padding: 10px 2.85vw;
+      padding: 1px 2.85vw;
     }
     .btn {
       padding: 10px;

@@ -2,7 +2,6 @@
 
 .mod-banner {
   @include position(relative, auto, null, null, null, 12);
-  // background-image: linear-gradient(to bottom, rgba(238, 238, 238, 0) 12%, #1e5091 107%);
 
   &::before {
     content: "";
@@ -22,7 +21,7 @@
     @include position(relative, null, null, null, null, 2);
   }
   .banner-text {
-    margin: 48px 1px 46px 23px;
+    margin: 48px 1px 0 23px;
   }
 }
 @include media-breakpoint-down(lg) {
@@ -39,17 +38,18 @@
   }
   .banner-text {
     padding: 0 8px;
-    margin: 48px 23px 46px 18px;
+    margin: 46px 20px 0 22px;
   }
   .btn-banner {
     input {
       padding: 10px 20px;
       min-width: 271px;
-      margin: 41px 0;
+      margin: 70px 0 59px;
       font-size: .875rem;
     }
     button {
-      margin-top: 20px;
+      // margin-top: 43px;
+      @include sizeEx(33px);
     }
   }
   .title_banner {
