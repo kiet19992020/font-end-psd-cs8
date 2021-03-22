@@ -16,12 +16,6 @@
     z-index: 2;
   }
   .about-tile {
-    h5 {
-      @include font($jt, 18px, $darkblue);
-      line-height: 1.17;
-      letter-spacing: -.12px;
-      padding-right: 50px;
-    }
     hr {
       margin-left: 0;
     }
@@ -29,8 +23,6 @@
   .about-slide {
     margin: 0 15px;
     box-shadow: 0 0 10px 5px #52a3e670;
-
-
   }
   .ab-slide-info {
     padding-top: 25px;
@@ -39,15 +31,13 @@
       line-height: 1.09;
       letter-spacing: -.1px;
     }
-    p {
-      @include font($ssp, 16px, $darkblue);
-      line-height: 1.44;
-      letter-spacing: -.11px;
-    }
   }
   .ab-slide-btn {
     a {
       color: $blue;
+    }
+    p {
+      margin-top: 20px;
     }
     img {
       margin-top: 10px;

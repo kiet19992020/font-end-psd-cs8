@@ -13,11 +13,6 @@
     .slide-title {
       padding: 0 5px;
       margin-left: 26px;
-      h5 {
-        @include font($jt, 18px, $darkblue);
-        line-height: 1.17;
-        letter-spacing: -.12px;
-      }
       hr {
         background-color: $blue;
         width: 100px;

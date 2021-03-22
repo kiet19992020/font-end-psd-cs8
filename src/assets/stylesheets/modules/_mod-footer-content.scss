@@ -34,10 +34,6 @@
   .submit-cta {
     padding-left: 32px;
     padding-right: 37px;
-    h4 {
-      text-transform: uppercase;
-
-    }
     a {
       margin-top: 6px;
       padding: 12px 0;
@@ -47,11 +43,6 @@
     }
   }
   .content-cta {
-    h4 {
-      @include font($jt, 22px, $white, 300);
-      line-height: 1.14;
-      letter-spacing: .61px;
-    }
     // padding: 156px;
     .sign-cta-mb {
       margin-top: 30px;

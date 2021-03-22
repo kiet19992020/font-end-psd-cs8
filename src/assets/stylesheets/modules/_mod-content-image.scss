@@ -1,48 +1,31 @@
 // module 'Mod Content Image'
-.content-slide {
-  @include background-size(cover);
-  color: $white;
-  z-index: 3;
-}
-.content-text {
-  padding: 30px 45px;
-  hr {
-    @include sizeEx(100px,1px);
-    border: none;
-    background-color: $blue;
-    margin-left: 0;
-  }
-}
-.text-slide {
-  padding: 80px 0;
-  max-width: 568px;
-}
+
 @include media-breakpoint-down(lg) {
   .content-slide {
+    position: relative;
     min-height: 214px;
-    h2,
-    h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
       @include font($jt, 1.75rem, $white, 600);
       line-height: .4;
       letter-spacing: .14px;
+      @include position(relative,0,0,0,8%,5);
     }
   }
   .text-slide {
-    padding: 80px 0;
+    padding: 38px 12px 0 30px;
     max-width: 568px;
-    h5 {
-      @include font($jt, 18px, $darkblue);
-      line-height: 1.17;
-      letter-spacing: -.12px;
-    }
     hr {
       margin: 19px 0;
     }
-    p {
-      @include font($jt, 16px, $darkblue);
-      line-height: 1.31;
-      letter-spacing: -.11px;
-      padding: 5px 0;
-    }
+  }
+  .bg-image-mb {
+    position: absolute;
+    top: 0;
+    right: -45px;
+    bottom: 0;
+    left: -45px;
   }
 }

@@ -32,10 +32,7 @@
       margin-bottom: 25px;
     }
     p {
-      padding: 5px;
-      @include font($ssp, 16px,null,null);
-      line-height: 1.35;
-      letter-spacing: -.33px;
+      padding: 0;
     }
     h2 {
       @include font($jt, 28px, $white, 600);

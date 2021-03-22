@@ -1,10 +1,10 @@
 @include media-breakpoint-up(lg) {
   .main-menu-ul {
-    @include position(absolute,5px,0,null,null,null);
+    @include position(absolute, 5px, 0, null, null, null);
     > li {
+      @include font($jt, .9375rem, $blue, 500);
       > a {
         border-right: 1px solid $blue;
-        @include font($jt,.9375rem,$blue,500);
         padding: 0 20px;
       }
       &:hover {
@@ -22,10 +22,18 @@
       padding: 1px 2.85vw;
     }
     .btn {
-      padding: 10px;
+      padding: 11px;
       min-width: 199px;
       font-size: 1.125rem;
+      margin-top: -16px;
+      margin-left: 65px;
     }
   }
 }
-
+@media (max-width: 1600px) {
+  .main-menu-ul > li {
+    > a {
+      padding: 1px 1.5vw;
+    }
+  }
+}

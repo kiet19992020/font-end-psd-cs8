@@ -19,21 +19,19 @@
   }
   li {
     @include font($jt,.875rem,$white);
-    margin-bottom: 7px;
+    margin-bottom: 11px;
   }
   h5 {
-    @include font(null,.875rem,$blue,500);
+    @include font(null,.875rem,$blue,600);
   }
 }
 .footer-logo {
-  max-width: 206px;
-  padding: 15px 0;
-  background-color: $white;
-  background-repeat: no-repeat;
-  // background-image: url(../images/logo.png);
+  img {
+    max-width: 181px;
+  }
 }
 .col-menu-footer {
-  padding: 0;
+  padding: 0 10px;
 }
 .footer-copyright {
   @include sizeEx(308px, 27px);
@@ -50,6 +48,7 @@
     padding: 0;
   }
   .footer-logo {
+    background-color: $white;
     img {
       margin-left: -20%;
     }

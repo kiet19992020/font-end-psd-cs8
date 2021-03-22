@@ -1,5 +1,23 @@
 @include media-breakpoint-up(lg) {
-
+  .mod-content-image {
+    min-height: 638px;
+    .container {
+      z-index: 2;
+    }
+  }
+  .bg-image-content {
+    @include position(absolute,0,0,0,0,1);
+    width: calc(50% - 110px);
+  }
+  .text-slide {
+    padding-left: 50px;
+    hr {
+      @include sizeEx(100px,1px);
+      border: none;
+      background-color: $blue;
+      margin: 30px 0;
+    }
+  }
   .content-slide {
     max-width: 920px;
     width: 100%;
@@ -9,18 +27,5 @@
       min-width: 342px;
       letter-spacing: -.33px;
     }
-  }
-  .content-text {
-    padding: 30px 60px;
-    hr {
-      @include sizeEx(100px,1px);
-      border: none;
-      background-color: $blue;
-      margin: 30px 0;
-    }
-  }
-  .text-slide {
-    padding: 103px 7px;
-    max-width: 568px;
   }
 }

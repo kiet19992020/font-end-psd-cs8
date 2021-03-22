@@ -1,18 +1,18 @@
 module.exports = [
   {
     title: 'Case Study Headline can go to two lines',
-    bg: '#1c9bd6'
+    classBg: 'bg-info'
   },
   {
     title: 'Case Study Headline can go to two lines',
-    bg: '#62bae3'
+    classBg: 'bg-62'
   },
   {
     title: 'Case Study Headline can go to two lines',
-    bg: '#a6d8f0'
+    classBg: 'bg-a6'
   },
   {
     title: 'Case Study Headline can go to two lines',
-    bg: '#ceeaf7'
+    classBg: 'bg-ce'
   }
 ]

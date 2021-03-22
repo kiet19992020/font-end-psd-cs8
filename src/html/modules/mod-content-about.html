@@ -2,7 +2,7 @@
 <section class="module mod-content-about">
   <div class="about-info">
     <div class="container">
-      <div class="about-tile text-center">
+      <div class="about-tile text-md-center">
         <h5>LEARN MORE ABOUT OUR DATA CENTER SOLUTIONS</h5>
         <hr>
       </div>
@@ -14,7 +14,7 @@
               <div class="lazy bg ps-as" data-src="assets/images/POR03-Option-1_Birds-Eye-768x412.jpg"></div>
             </div>
             <div class="col-lg-6">
-              <div class="ab-slide-info">
+              <div class="ab-slide-info last-mb-none">
                 <h4>White Paper Headline Goes Here</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -33,13 +33,13 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5 about-text ">
+        <div class="col-lg-5 about-text last-mb-none ">
           <div class="row ">
             {% for abouts in abouts %}
             {% set even = (loop.index >= 3) %}
             {% set evet = (loop.index % 2 == 0) %}
             <div class="col-lg-6 {{ 'pt-lg-4 text-dark'if even else 'text-white'}} {{ 'pl-lg-4  text-dark'if evet}} ">
-              <div class="card" style="background-color:{{ abouts.bg }}">
+              <div class="card {{ abouts.classBg}} ">
                 <div class="card-body">
                   <h6>{{ abouts.title}}</h6>
                   <p>
