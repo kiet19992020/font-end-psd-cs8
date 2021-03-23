@@ -12,13 +12,12 @@
     padding: 30px 20px;
   }
 }
-.icon-content {
-  .icon-item {
-    h6 {
-      color: $blue;
-    }
+.icon-item {
+  h6 {
+    color: $blue;
   }
 }
+
 @include media-breakpoint-down(lg) {
   .mod-content-icon {
     padding: 60px 20px;
@@ -31,23 +30,20 @@
       margin-top: 25px;
       margin-bottom: 25px;
     }
-    p {
-      padding: 0;
-    }
     h2 {
-      @include font($jt, 28px, $white, 600);
+      font-size: rem(28);
+      font-weight: 600;
       line-height: 1.25;
       letter-spacing: .14px;
+    }
+    p {
+      padding: 0;
     }
   }
   .icon-content {
     .icon-item {
-      h6 {
-        @include font($jt, 16px, $blue, 600);
-        line-height: 1.06;
-      }
       p {
-        @include font($ssp, 14px, $white);
+        font-size: rem(14);
         line-height: 1.29;
         letter-spacing: -.09px;
       }

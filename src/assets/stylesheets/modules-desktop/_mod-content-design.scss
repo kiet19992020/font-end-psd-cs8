@@ -2,7 +2,7 @@
   .mod-content-design {
     padding: 55px 20px 50px;
     h6 {
-      @include font(null, 1.25rem, $black, 600);
+      @include font(null, null, $black, 600);
       line-height: 1.1;
     }
   }
@@ -17,7 +17,7 @@
     @include position(relative,null,null,0,10%,5);
   }
   .ds-text-items {
-    padding-right: 100px;
+    padding: 10px 100px 10px 0;
   }
   .design-text {
     padding: 8px 16px;

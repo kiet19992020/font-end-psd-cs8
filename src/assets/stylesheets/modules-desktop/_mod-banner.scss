@@ -11,7 +11,8 @@
   .banner-content {
     padding: 230px 0 95px;
     p {
-      @include font(null,18px,$black,600);
+      font-size: rem(18);
+      font-weight: 600;
       letter-spacing: -.12px
     }
     a {

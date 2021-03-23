@@ -42,7 +42,7 @@
   .desgin-text-content {
     padding: 0 45px;
     h6 {
-      @include font($jt, 16px, $black, 600);
+      color: $black;
       line-height: .05;
     }
   }

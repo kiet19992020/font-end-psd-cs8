@@ -1,0 +1,39 @@
+// module 'Mod Content Sort'
+.mod-content-sort {
+  padding: 200px;
+  .container {
+    max-width: 1340px;
+  }
+  .card-sort {
+    border: 1px solid $blue;
+    max-width: 426px;
+    min-height: 426px;
+    margin: 15px 10px;
+  }
+  .card-img {
+    h5 {
+      padding: 20px;
+      color: $white;
+      font-weight: 600;
+      &::before {
+        content: '';
+        background-color: aqua;
+        position: absolute;
+        top: 0;
+        left: -5px;
+        bottom: 0;
+        width: 5px;
+        height: 5vh;
+        // width: 5vw;
+      }
+    }
+    z-index: 2;
+    max-height: 270px;
+  }
+  .card-content {
+
+    top: auto;
+    z-index: 5;
+    left: 5%;
+  }
+}

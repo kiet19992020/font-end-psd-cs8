@@ -1,13 +1,9 @@
 .main-menu-ul {
   padding: .875rem 0;
-  > li {
-    @include font($jt, .9375rem, $blue, 500);
-  }
-
-  li {
+  li:not(.login-search) {
     position: relative;
     line-height: 1.2em;
-
+    @include font($jt, .9375rem, $blue, 500);
     a {
       display: block;
       text-decoration: none;
@@ -19,7 +15,9 @@
     }
   }
 }
-
+.login-search {
+  font-weight: 600;
+}
 .main-menu-dropdown {
   background-color: transparent;
   padding: 0;
@@ -54,10 +52,8 @@
 
 .hamburger-menu {
   padding: 0;
-
   cursor: pointer;
   background: $white;
-
   .icon-bar {
     display: block;
     @include sizeEx(34px, 3px);
@@ -110,74 +106,56 @@
     max-height: 0;
     visibility: hidden;
     overflow: hidden;
-    transition: 0.2s;
+    transition: .2s;
     padding: 0 25px;
-    .menu-search {
-      input {
-        padding: 6px 10px;
-        margin-bottom: 30px;
-        background: transparent;
-        border: solid 1px $white;
-        color: $white;
-        min-width: 200px;
-        width: 100%;
-      }
-      .icomoon {
-        padding: 0;
-        margin: 10px 0 0 -27px;
-        border: none;
-        background: transparent;
-        top: 0;
-        position: absolute;
-        color: $white;
-      }
-    }
-    .menu_location {
-      column-count: 2;
-      padding: 15px 0 5px;
-
-      a {
-        @include font($jt, 13px, $white);
-      }
-    }
-    li {
-      color: $white;
-    }
-
-    .btn-outline-info {
-      padding: 7px 10px;
-      min-width: 200px;
-      width: 100%;
-    }
-    .btn-primary {
-      padding: 7px 10px;
-      min-width: 200px;
-      width: 100%;
-    }
-
-    .main-menu-ul {
-      width: 100%;
-      > li {
-        font-size: 1.3em;
-        text-transform: uppercase;
-        > a:not(.btn) {
-          padding: 15px 0;
-          border-bottom: 1px solid $blue;
-        }
-      }
-    }
-
     &.is-open-menu {
       max-height: 2000px;
       width: 100%;
       visibility: visible;
       overflow: hidden;
-      transition: 0.5s;
+      transition: .5s;
       margin-top: 30px;
     }
   }
-}
-@media (max-width: 1500px) {
-  .header {;
+  .menu-search {
+    input {
+      padding: 6px 10px;
+      margin-bottom: 30px;
+      background: transparent;
+      border: solid 1px $white;
+      color: $white;
+      min-width: 200px;
+      width: 100%;
+    }
+    .icomoon {
+      padding: 0;
+      margin: 10px 0 0 -27px;
+      background: transparent;
+      @include position(absolute,0,null,null,null,null);
+      color: $white;
+    }
+  }
+  .menu_location {
+    column-count: 2;
+    padding: 15px 0 5px;
+    a {
+      @include font($jt, 13px, $white);
+    }
+  }
+  .btn {
+    padding: 12px 10px;
+    min-width: 200px;
+    width: 100%;
+  }
+  .main-menu-ul {
+    width: 100%;
+    > li {
+      font-size: rem(16);
+      > a:not(.btn) {
+        color: $white;
+        padding: 15px 0;
+        border-bottom: 1px solid $blue;
+      }
+    }
   }
 }

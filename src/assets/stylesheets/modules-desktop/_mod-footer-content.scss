@@ -2,7 +2,6 @@
   .mod-footer-content {
     padding: 97px 0;
     h4 {
-      color: $white;
       font-weight: 400;
     }
   }
@@ -14,19 +13,20 @@
       border-bottom: 1px solid $white;
       padding: 10px 0;
       outline: none;
-      width: 73%;
+      max-width: 320px;
+      width: 100%;
       background: transparent;
       margin-top: 63px;
     }
 
     button {
       padding: 0 15px;
-      @include font($jt, 16px, $white, 600);
+      @include font($jt, 16px,null, 600);
       margin-left: 30px;
     }
   }
   .submit-cta {
-    padding: 56px 47px 0 92px;
+    padding: 56px 92px 0;
     text-transform: uppercase;
     a {
       margin-top: 51px;

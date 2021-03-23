@@ -20,7 +20,7 @@ const internals = {
           breakpoint: 1500,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 2,
             infinite: true
           }
         },

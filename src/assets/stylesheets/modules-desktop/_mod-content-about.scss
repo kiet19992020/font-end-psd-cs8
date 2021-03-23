@@ -32,16 +32,16 @@
     padding: 56px 21px 30px 10px;
   }
   .about-text {
-    margin-left: 15px;
+    padding: 0 30px;
   }
   .card {
-    min-width: 258px;
     min-height: 171px;
-    padding: 20px 29px 10px;
+    padding: 40px 29px 20px;
   }
   .info-main-content {
     position: relative;
-    transform: translateX(2vw);
+    z-index: 5;
+    margin-left: 20px;
   }
   .card-body {
     h6 {

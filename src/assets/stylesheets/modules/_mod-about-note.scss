@@ -10,15 +10,16 @@
     border: 2px solid $darkblue;
 
   }
+  #img-top {
+    @include position(absolute,-100px,40%,null,null);
+  }
+  #img-bottom {
+    @include position(absolute,null,40%,-120px,null);
+  }
   .about-note-text {
-    #img-top {
-      @include position(absolute,-100px,40%,null,null);
-    }
-    #img-bottom {
-      @include position(absolute,null,40%,-120px,null);
-    }
     h4 {
-      @include font($jt, 22px, $darkblue, 600);
+      font-weight: 600;
+      color: $darkblue;
       line-height: 1.45;
       letter-spacing: .46px;
     }

@@ -23,10 +23,16 @@
     border-left: 1px solid $white;
   }
 }
-
 @include media-breakpoint-down(lg) {
   .mod-footer-content {
-    padding: 63px 11px 0 0;
+    padding: 63px 11px;
+  }
+  .btn {
+    margin-top: 6px;
+    padding: 12px 0;
+    min-width: 294px;
+    width: 100%;
+    @include font($jt, 14px,null, 600);
   }
   .sign-up-cta {
     padding: 0 35px;
@@ -34,16 +40,8 @@
   .submit-cta {
     padding-left: 32px;
     padding-right: 37px;
-    a {
-      margin-top: 6px;
-      padding: 12px 0;
-      min-width: 294px;
-      width: 100%;
-      @include font($jt, 14px, $white, 600);
-    }
   }
   .content-cta {
-    // padding: 156px;
     .sign-cta-mb {
       margin-top: 30px;
       min-width: 280px;
@@ -52,12 +50,6 @@
         margin-bottom: 30px;
         line-height: 1.5;
         letter-spacing: .16px;
-      }
-      a {
-        padding: 12px 0;
-        min-width: 294px;
-        width: 100%;
-        @include font($jt, 14px, $white, 600);
       }
     }
     ::placeholder {

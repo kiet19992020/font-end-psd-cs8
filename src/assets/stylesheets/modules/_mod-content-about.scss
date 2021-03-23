@@ -1,18 +1,14 @@
 // module 'Mod Content About'
 .mod-content-about {
   padding: 100px 0;
-  .about-info {
-    .about-tile {
-      hr {
-        width: 100px;
-        background-color: $blue;
-      }
-    }
-  }
+}
+hr {
+  width: 100px;
+  background-color: $blue;
 }
 @include media-breakpoint-down(lg) {
   .img-about {
-    @include sizeEx(100%,157px);
+    @include sizeEx(100%, 157px);
     z-index: 2;
   }
   .about-tile {
@@ -25,9 +21,9 @@
     box-shadow: 0 0 10px 5px #52a3e670;
   }
   .ab-slide-info {
-    padding-top: 25px;
+    padding: 25px 0;
     h4 {
-      @include font($jt, 22px, $darkblue, 600);
+      @include font(null,null, $darkblue, 600);
       line-height: 1.09;
       letter-spacing: -.1px;
     }
@@ -52,11 +48,14 @@
   .card-body {
     padding: 5px 20px;
     h6 {
-      @include font($jt, 18px,null,600);
-      margin-bottom: 40px;
+      font-size: rem(18);
+      margin-bottom: 15px;
+    }
+    p {
+      padding: 25px 0;
     }
     a {
-      @include font($jt,14px,null,600);
+      font-size: rem(14);
     }
   }
 }

@@ -1,15 +1,15 @@
 @include media-breakpoint-up(lg) {
+  #img-bottom {
+    @include position(absolute,null,45%,-30px,null);
+  }
+  #img-top {
+    @include position(absolute,-10%,45%,null,null);
+  }
   .about-note-text {
     padding: 125px 50px 125px 100px;
     width: 100%;
-    #img-top {
-      @include position(absolute,-10%,45%,null,null);
-    }
     h4 {
-      @include font($jt, 28px, #1e5091, 600);
-    }
-    #img-bottom {
-      @include position(absolute,null,45%,-30px,null);
+      font-size: rem(28);
     }
   }
   .about-note {
