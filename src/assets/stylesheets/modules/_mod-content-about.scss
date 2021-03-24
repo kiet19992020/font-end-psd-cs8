@@ -12,12 +12,13 @@ hr {
     z-index: 2;
   }
   .about-tile {
+    padding: 0 19px;
     hr {
       margin-left: 0;
     }
   }
   .about-slide {
-    margin: 0 15px;
+    margin: 0 22px;
     box-shadow: 0 0 10px 5px #52a3e670;
   }
   .ab-slide-info {
@@ -31,13 +32,14 @@ hr {
   .ab-slide-btn {
     a {
       color: $blue;
+      font-size: rem(14);
     }
     p {
       margin-top: 20px;
     }
     img {
-      margin-top: 10px;
-      max-width: 35px;
+      padding: 13px 0 0 3px;
+      max-width: 23px;
     }
   }
   .card {
@@ -49,7 +51,7 @@ hr {
     padding: 5px 20px;
     h6 {
       font-size: rem(18);
-      margin-bottom: 15px;
+      margin-bottom: 0;
     }
     p {
       padding: 25px 0;

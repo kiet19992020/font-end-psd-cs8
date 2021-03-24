@@ -1,11 +1,12 @@
 @include media-breakpoint-up(lg) {
   .mod-content-icon {
-    padding: 136px 0 40px;
+    padding: 136px 0;
   }
   .icon-title {
     p {
       max-width: 495px;
       margin: 0 auto;
+      padding: 0;
     }
     hr {
       margin: 36px auto;

@@ -20,7 +20,6 @@ html {
 body,
 html {
   overflow-x: hidden;
-
 }
 
 h1,
@@ -53,7 +52,6 @@ ul {
   li {
     margin-bottom: 0;
     list-style: none;
-
   }
 }
 
@@ -67,17 +65,16 @@ strong {
   font-weight: 700;
 }
 a {
-  transition: .25s all;
+  transition: 0.25s all;
   &:hover {
-    transition: .25s all;
+    transition: 0.25s all;
   }
 }
 .h1,
-h1
- {
+h1 {
   font-weight: 300;
   line-height: 1.04;
-  letter-spacing: -.33px;
+  letter-spacing: -0.33px;
 }
 .h2,
 h2 {
@@ -90,14 +87,14 @@ h2 {
 h3 {
   font-family: $ssp;
   line-height: 1.38;
-  letter-spacing: .31px;
+  letter-spacing: 0.31px;
   color: $blue-1e;
 }
 .h4,
 h4 {
   font-weight: 600;
   line-height: 1.32;
-  letter-spacing: .14px;
+  letter-spacing: 0.14px;
   color: $blue-1e;
 }
 .h5,
@@ -107,13 +104,37 @@ h5 {
 .h5,
 h6 {
   line-height: 1.35;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .bd-p2 {
-  @include font($ssp,18px,$darkblue);
+  @include font($ssp, 18px, $darkblue);
   line-height: 1.5;
-  letter-spacing: -.12px;
+  letter-spacing: -0.12px;
 }
 
-
+@include media-breakpoint-down(md) {
+  .hide-loader {
+    display: none;
+  }
+  h4 {
+    font-size: 1.375rem;
+    color: $white;
+    font-weight: 300;
+    line-height: 1.14;
+    letter-spacing: .61px;
+  }
+  h5 {
+    font-size: 1.125rem;
+    line-height: 1.17;
+  }
+  h6 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.31;
+    letter-spacing: -0.11px;
+  }
+}

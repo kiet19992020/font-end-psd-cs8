@@ -1,6 +1,6 @@
 @include media-breakpoint-up(lg) {
   .mod-content-design {
-    padding: 55px 20px 50px;
+    padding: 72px 20px;
     h6 {
       @include font(null, null, $black, 600);
       line-height: 1.1;
@@ -17,7 +17,7 @@
     @include position(relative,null,null,0,10%,5);
   }
   .ds-text-items {
-    padding: 10px 100px 10px 0;
+    padding: 21px 100px 10px 0;
   }
   .design-text {
     padding: 8px 16px;
@@ -32,7 +32,7 @@
     letter-spacing: 10px;
   }
   .ds-slide-img {
-    margin-top: -126px;
+    margin-top: -140px;
     margin-left: -31px;
   }
 }

@@ -7,24 +7,23 @@
   }
   .bg-image-content {
     @include position(absolute,0,0,0,0,1);
-    width: calc(50% - 110px);
+    width: calc(50% - 97px);
   }
   .text-slide {
-    padding-left: 50px;
+    padding-left: 65px;
     hr {
       @include sizeEx(100px,1px);
       border: none;
       background-color: $blue;
-      margin: 30px 0;
+      margin: 40px 0;
     }
   }
   .content-slide {
     max-width: 920px;
     width: 100%;
     h2 {
-      margin-right: -15px;
+      margin-left: 81px;
       font-weight: 600;
-      min-width: 342px;
       letter-spacing: -.33px;
     }
   }

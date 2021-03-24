@@ -5,12 +5,7 @@
 
 /* Arrows */
 
-
-
 .slider {
-  .slick-list  {
-    width: 90vw;
-  }
   &::before {
     content: "";
     top: 0;
@@ -83,11 +78,11 @@
   display: none;
 }
 
-@include media-breakpoint-up(lg) {
+
+
+
+@include media-breakpoint-up(xl) {
   .mod-slider {
-    position: relative;
-    right: 0;
-    margin: 0;
     .img-content-text {
       padding: 0 25px;
       top: auto;
@@ -98,10 +93,13 @@
   }
 }
 
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-down(xl) {
   .slider {
+    .slick-list  {
+      width: 100vw;
+    }
     .slider-img {
-      padding-bottom: 82%;
+      padding-bottom: 90%;
       width: 100%;
     }
     &::before {
@@ -127,7 +125,7 @@
   .slide-btn-left,
   .slide-btn-right {
     margin-top: 30px;
-    margin-left: 24vw;
+    margin-left: 24px;
     height: 33px;
     width: 33px;
   }
@@ -149,18 +147,26 @@
   }
   .img-content {
     h5 {
-      font-size: 22px;
+      font-size: rem(22);
       line-height: 1.14;
       letter-spacing: 0.61px;
     }
     h6 {
-      font-size: 18px;
+      font-size: rem(18);
       line-height: 1.28;
       letter-spacing: -0.12px;
     }
     a {
-      font-size: 14px;
+      font-size: rem(14);
       margin-right: -18px;
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .slider {
+    margin-left: 50px;
+    .slick-list  {
+      width: 83vw;
     }
   }
 }

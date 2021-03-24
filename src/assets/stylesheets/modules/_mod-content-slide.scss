@@ -5,6 +5,9 @@
 .slide-title {
   padding: 0 5px;
   width: 75%;
+  p {
+    font-weight: 600;
+  }
 }
 
 @include media-breakpoint-down(lg) {

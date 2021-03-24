@@ -2,12 +2,15 @@
 .mod-content-design {
   margin-top: 100px;
   background-color: #e4f3fa;
-
+  h5,
+  h6 {
+    margin-bottom: 0;
+  }
 }
 .design-text {
   hr {
     width: 100px;
-    margin: 25px 0;
+    margin: 30px 0;
     background-color: $blue;
   }
 }
@@ -21,16 +24,18 @@
 }
 @include media-breakpoint-down(lg) {
   .mod-content-design {
-    padding: 60px 0;
+    padding: 36px 0;
+    .bg-slide {
+      margin-top: 20px;
+    }
   }
   .design-text {
     padding: 0;
   }
   .design-text-title {
-    padding: 0 46px;
+    padding: 20px 46px;
     hr {
-      margin-bottom: 20px;
-      margin-top: 0;
+      margin: 17px 0;
     }
   }
   .ds-slide-img {
@@ -39,21 +44,22 @@
       width: 100%;
     }
   }
+
   .desgin-text-content {
-    padding: 0 45px;
+    padding: 12px 45px;
     h6 {
       color: $black;
-      line-height: .05;
+      line-height: 1.5;
     }
   }
   .ds-text-items {
-    padding: 11px 0;
+    padding: 15px 0;
   }
 
   .btn-design-left,
   .btn-design-right {
     @include sizeEx(33px);
-    margin-top: 20px;
+    margin: 8px 0;
   }
 
   .btn-design-left {

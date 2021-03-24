@@ -6,7 +6,7 @@
 @include media-breakpoint-down(lg) {
   .about-note {
     margin: 0 26px;
-    padding: 76px 30px;
+    padding: 83px 30px;
     border: 2px solid $darkblue;
 
   }
@@ -14,7 +14,7 @@
     @include position(absolute,-100px,40%,null,null);
   }
   #img-bottom {
-    @include position(absolute,null,40%,-120px,null);
+    @include position(absolute,null,40%,-110px,null);
   }
   .about-note-text {
     h4 {

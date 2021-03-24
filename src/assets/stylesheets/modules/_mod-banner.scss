@@ -1,6 +1,11 @@
 // module 'Mod Banner'
 
 .mod-banner {
+  .banner-content {
+    vertical-align: middle;
+    height: 519px;
+    display: table-cell;
+  }
   @include position(relative, auto, null, null, null, 12);
   &::before {
     content: "";
@@ -19,34 +24,36 @@
   .container {
     @include position(relative, $index:2);
   }
+  p {
+    margin-bottom: 0
+  }
 
 }
 @include media-breakpoint-down(lg) {
   .mod-banner {
     text-align: center;
+    padding: 141px 0 14px;
   }
   .banner-content {
-    padding: 180px 0 105px;
+    img {
+      max-width: 285px;
+      width: 100%;
+      margin-top: -135px;
+    }
   }
   .banner-text {
     padding: 0 20px;
     margin-top: 50px;
     a {
-      padding: 12px 20px;
       min-width: 271px;
-      margin: 70px 0 56px;
-      font-size: .875rem;
+    }
+    .btn {
+      margin: 86px auto 58px;
     }
   }
   .btn-banner {
     button {
       @include sizeEx(33px);
-    }
-  }
-  .title_banner {
-    img {
-      max-width: 285px;
-      @include sizeEx(100%, auto);
     }
   }
 }
