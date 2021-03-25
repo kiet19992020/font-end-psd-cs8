@@ -18,12 +18,8 @@
     }
   }
   .bg-image-mb {
-    position: absolute;
-    top: 0;
-
-    bottom: 0;
+    @include position(absolute,0,null,0,50%,null);
     width: 100vw;
-    left: 50%;
     transform: translateX(-50%);
   }
 }

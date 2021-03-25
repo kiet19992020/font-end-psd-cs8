@@ -11,13 +11,8 @@
     box-shadow: -1px 1px 24px 9px rgba(28, 155, 214, .16);
   }
   .ab-slide-btn {
-    img {
-      padding-top: 25px;
-      margin-left: 26px;
-      max-width: 35px;
-    }
     p {
-      margin: 32px 18px;
+      margin: 32px 0;
     }
     a {
       color: $darkblue;
@@ -29,20 +24,18 @@
     }
   }
   .ab-slide-info {
-    padding: 56px 10px 30px;
+    padding: 56px 10px 35px;
 
   }
   .about-text {
-    padding: 0 30px;
+    padding: 0 76px 0 30px;
   }
   .card {
     width: 100%;
     padding: 40px 29px 23px;
   }
   .info-main-content {
-    position: relative;
-    z-index: 5;
-    margin-left: 20px;
+    @include position(relative,null,null,null,40px,5);
   }
   .card-body {
     h6 {

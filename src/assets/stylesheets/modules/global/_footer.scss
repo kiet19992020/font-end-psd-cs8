@@ -2,7 +2,7 @@
   padding: 90px 0 20px;
   text-transform: uppercase;
   .container {
-    max-width: 1362px;
+    max-width: 1366px;
   }
 }
 .footer-item-col {
@@ -44,10 +44,17 @@
     color: $white;
   }
 }
-.col-menu-footer {
-  max-width: calc(20% - 65px);
-}
 
+@include media-breakpoint-up(lg) {
+  .col-menu-footer {
+    padding: 0 10px;
+    max-width: calc(20% - 63px);
+  }
+  .col-contact {
+    margin-left: 35px;
+  }
+
+}
 @include media-breakpoint-down(lg) {
   .footer {
     padding: 0;
@@ -68,6 +75,7 @@
       @include font(null, 1rem, #229ad6, 500);
     }
   }
+
   .btn {
     min-width: 294px;
     padding: 12px 0;
@@ -84,7 +92,8 @@
   }
   .footer-copyright {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
     padding: 20px 0;
   }
   .social {

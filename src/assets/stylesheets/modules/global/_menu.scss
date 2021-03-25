@@ -17,6 +17,7 @@
 }
 .login-search {
   font-weight: 600;
+  font-size: rem(14);
 }
 .main-menu-dropdown {
   background-color: transparent;
@@ -139,7 +140,7 @@
     column-count: 2;
     padding: 15px 0 5px;
     a {
-      @include font($jt, 13px, $white);
+      @include font($jt, rem(13), $white);
     }
   }
   .btn {

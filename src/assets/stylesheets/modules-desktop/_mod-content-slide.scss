@@ -1,5 +1,22 @@
-@include media-breakpoint-up(lg) {
-  .mod-content-slide {
 
+@include media-breakpoint-up(xl) {
+  .slider {
+    .slick-list  {
+      width: 91vw;
+    }
+  }
+  .mod-slider {
+    .img-content-text {
+      padding: 15px 25px;
+      top: auto;
+      a {
+        font-size: rem(16);
+        margin-right: -18px;
+      }
+      h5 {
+        font-size: rem(26);
+      }
+    }
   }
 }
+

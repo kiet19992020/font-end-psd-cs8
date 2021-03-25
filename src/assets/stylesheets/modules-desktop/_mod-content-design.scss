@@ -24,7 +24,7 @@
   }
   .desgin-slide {
     .slick-list {
-      @include sizeEx(916px,100%);
+      width: 45vw;
     }
   }
   .dg-slide-btn {

@@ -27,11 +27,5 @@
   .about-note {
     position: relative;
     z-index: 10;
-    // &::before {
-    //   content: '';
-    //   @include position(absolute,0,0,0,null);
-    //   width: 100vw;
-    //   border: 2px solid $darkblue;
-    // }
   }
 }

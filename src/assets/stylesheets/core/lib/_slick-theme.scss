@@ -34,6 +34,7 @@
   h5 {
     font-size: 1.625rem;
     font-weight: 600;
+    margin-bottom: 0;
   }
   h6 {
     font-weight: 500;
@@ -78,22 +79,7 @@
   display: none;
 }
 
-
-
-
-@include media-breakpoint-up(xl) {
-  .mod-slider {
-    .img-content-text {
-      padding: 0 25px;
-      top: auto;
-      a {
-        margin-right: -18px;
-      }
-    }
-  }
-}
-
-@include media-breakpoint-down(xl) {
+@include media-breakpoint-down(lg) {
   .slider {
     .slick-list  {
       width: 100vw;
@@ -162,7 +148,7 @@
     }
   }
 }
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(xs) {
   .slider {
     margin-left: 50px;
     .slick-list  {

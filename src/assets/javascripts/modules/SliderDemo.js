@@ -35,7 +35,7 @@ const internals = {
         {
           breakpoint: 1025,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true
           }
@@ -43,13 +43,21 @@ const internals = {
         {
           breakpoint: 900,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true
           }
         },
         {
           breakpoint: 769,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true
+          }
+        },
+        {
+          breakpoint: 600,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
